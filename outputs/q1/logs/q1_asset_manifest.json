@@ -1,0 +1,25 @@
+{
+  "purpose": "冻结交接单、原始输入和原样复用图形的完整性记录；图形不由复现脚本重绘。",
+  "handoff_docx": {
+    "path": "docs/handoffs/q1_frozen_handoff.docx",
+    "sha256": "A57A46A4EBFFB921E7A1CB0394102181D0D3B389D3DB3AB187FEFD4889B4C4D2"
+  },
+  "raw_inputs": {
+    "data/raw/q1_attachment1.xlsx": "DE8E67E2C3FAFB703553CB20E46F1A6DB7109C5039BD50FD450C1E093A7080A3",
+    "data/raw/q1_attachment2.xlsx": "9AA92011182076833CED7CC47B57C57875A85ED8FB2B8EDD2B1F66DD3C10AC82"
+  },
+  "frozen_figures": {
+    "attachment1_conversion_fits": {
+      "path": "paper/figures/q1_handoff/appendix_c_conversion_fits.png",
+      "sha256": "30868519C470C26C6E272F30E244D7052302BAC847DAE4AFDB9D964F3496666A"
+    },
+    "attachment1_selectivity_fits": {
+      "path": "paper/figures/q1_handoff/appendix_c_selectivity_fits.png",
+      "sha256": "C18911BE1B0DDB26297859CC9D0434DC1172167BC92C6B2E6374CE0896F74D58"
+    },
+    "attachment2_time_stability": {
+      "path": "paper/figures/q1_handoff/appendix_c_time_stability.png",
+      "sha256": "417B4E3CCE592601F79594EB9719392D470420CEA1FEB5D27BDD74E54ED1C15C"
+    }
+  }
+}

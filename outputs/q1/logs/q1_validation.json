@@ -1,0 +1,10 @@
+{
+  "status": "PASS",
+  "discrepancies": [],
+  "attachment2_linear_trend": {
+    "intercept": 42.67093266506199,
+    "slope": -0.05276089490112134,
+    "r2": 0.9329232088741889,
+    "loo_rmse": 2.0251837062646727
+  }
+}

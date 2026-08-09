@@ -1,24 +1,25 @@
 \section{符号说明}
 
-本文主要符号如表~\ref{tab:symbols} 所示。局部使用的临时变量在首次出现处另行说明。
+本文主要符号如表~\ref{tab:symbols} 所示。符号、单位和百分数尺度均沿用队内母符号表；局部回归参数在首次出现处定义。
 
 \begin{table}[H]
   \centering
-  \caption{主要符号说明}
+  \caption{问题一主要符号说明}
   \label{tab:symbols}
-  \begin{tabularx}{\textwidth}{C{0.18\textwidth} X C{0.18\textwidth}}
+  \begin{tabularx}{\textwidth}{C{0.24\textwidth} X C{0.17\textwidth}}
     \toprule
     符号 & 含义 & 单位 \\
     \midrule
-    $T$ & 反应温度 & $^\circ C$ \\
-    $t$ & 反应时间 & min \\
-    $X$ & 乙醇转化率 & \% \\
-    $S$ & C4烯烃选择性 & \% \\
-    $Y$ & C4烯烃收率 & \% \\
-    $w_{\mathrm{Co}}$ & Co负载量 & wt\% \\
-    $m$ & 催化剂装料质量 & mg \\
-    $F$ & 乙醇进料条件 & ml/min \\
-    $z$ & 装料方式 & - \\
+    $T,t$ & 反应温度、反应时间 & \si{\degreeCelsius}，min \\
+    $X_{\mathrm{EtOH}}$ & 乙醇转化率，按原始百分数尺度记录 & \% \\
+    $S_{\mathrm{C4}}$ & $\mathrm{C}_4$ 烯烃选择性 & \% \\
+    $Y_{\mathrm{C4}}$ & $\mathrm{C}_4$ 烯烃收率，$Y_{\mathrm{C4}}=X_{\mathrm{EtOH}}S_{\mathrm{C4}}/100$ & \% \\
+    $G,N_1,N_2$ & 附件1组合数、附件1温度记录数、附件2时间观测数 & 个，条，条 \\
+    $i,j,k$ & 组合、组合内温度、附件2时间观测索引 & -- \\
+    $T_{ij},t_k^{(2)}$ & 附件1实测温度、附件2实测反应时间 & \si{\degreeCelsius}，min \\
+    $X_{ij},S_{ij}$ & 组合 $i$ 在温度 $T_{ij}$ 下的转化率和选择性 & \% \\
+    $R,\widehat R,e,\varepsilon$ & 响应变量、预测值、残差和统计模型误差项 & 与响应一致 \\
+    $R^2,\mathrm{RMSE}_{\mathrm{LOO}}$ & 样本内决定系数、组内留一预测均方根误差 & --，百分点 \\
     \bottomrule
   \end{tabularx}
 \end{table}
