@@ -1,0 +1,137 @@
+%! TEX program = xelatex
+\documentclass[UTF8,zihao=-4,a4paper,fontset=none]{ctexart}
+
+\usepackage[a4paper,top=2.2cm,bottom=2.2cm,left=2.35cm,right=2.35cm]{geometry}
+\usepackage{amsmath,amssymb,bm}
+\usepackage{fontspec}
+\setCJKmainfont{Noto Serif CJK SC}
+\setCJKsansfont{Noto Sans CJK SC}
+
+\usepackage{booktabs,longtable,tabularx,array}
+\usepackage{siunitx}
+\usepackage{xcolor}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage{fancyhdr}
+\usepackage{hyperref}
+
+\sisetup{detect-all}
+\hypersetup{hidelinks,pdftitle={CUMCM 2021 B题队内符号约定}}
+\setlength{\parindent}{2em}
+\setlength{\parskip}{0pt}
+\renewcommand{\arraystretch}{1.18}
+\newcolumntype{C}[1]{>{\centering\arraybackslash}p{#1}}
+\newcolumntype{L}[1]{>{\raggedright\arraybackslash}p{#1}}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot[C]{\thepage}
+\renewcommand{\headrulewidth}{0pt}
+\titleformat{\section}{\sffamily\bfseries\zihao{4}}{\thesection}{0.8em}{}
+\titlespacing{\section}{0pt}{1.0em}{0.45em}
+\setlist[itemize]{leftmargin=2.2em,itemsep=0.15em,topsep=0.2em}
+
+\begin{document}
+
+\begin{center}
+  {\sffamily\bfseries\zihao{2} CUMCM 2021 B 题队内符号约定}\par
+  \vspace{0.4em}
+  {\zihao{-4}乙醇偶合制备 $\mathrm{C}_4$ 烯烃｜母符号表（冗余版）}
+\end{center}
+
+\noindent\textbf{使用原则：}本文件是队内建模、代码、制图和论文协作的统一母符号表。论文“符号说明”只能从本表中\textbf{删减}，不得另行改名或改义。模型内部一次性参数可在正文首次出现处局部定义，无需提前写入正式符号表。
+
+\section{核心实验量与响应量}
+
+\begin{longtable}{C{0.18\textwidth} L{0.52\textwidth} C{0.14\textwidth}}
+\toprule
+符号 & 统一含义 & 单位 \\
+\midrule
+\endfirsthead
+\toprule
+符号 & 统一含义 & 单位 \\
+\midrule
+\endhead
+$T$ & 反应温度。附件1中同一催化剂组合在若干不同温度下测试。 & \si{\degreeCelsius} \\
+$t$ & 催化剂在乙醇氛围下的反应时间；主要用于附件2稳定性数据。 & \si{\minute} \\
+$X_{\mathrm{EtOH}}$ & 乙醇转化率，按附件原始百分数尺度记录。 & \% \\
+$S_{\mathrm{C4}}$ & $\mathrm{C}_4$ 烯烃选择性，指 $\mathrm{C}_4$ 烯烃在全部产物中的占比。 & \% \\
+$Y_{\mathrm{C4}}$ & $\mathrm{C}_4$ 烯烃收率；若 $X_{\mathrm{EtOH}}$、$S_{\mathrm{C4}}$ 均以百分数表示，则 $Y_{\mathrm{C4}}=X_{\mathrm{EtOH}}S_{\mathrm{C4}}/100$。 & \% \\
+$S_g$ & 第 $g$ 类产物的选择性；$g$ 仅作为附件中各产物类别的索引，不预设额外化学类别。 & \% \\
+$\omega_{\mathrm{Co}}$ & Co 负载量。严格沿用题目定义：Co 与 $\mathrm{SiO_2}$ 重量比的百分表示，例如 $1\,\mathrm{wt}\%$ 表示 Co:$\mathrm{SiO_2}\approx1:100$。 & wt\% \\
+$m_c$ & $\mathrm{Co/SiO_2}$ 装料质量。这里的 $c$ 表示 Co/$\mathrm{SiO_2}$ 催化材料，不表示纯 Co 质量。 & \si{\milli\gram} \\
+$m_h$ & HAP 装料质量。 & \si{\milli\gram} \\
+$m_q$ & 石英砂质量；附件1中仅 A11 为 \SI{90}{\milli\gram}，其余普通组合取 0。 & \si{\milli\gram} \\
+$m_{\mathrm{cat}}$ & 催化材料总装料量，定义为 $m_{\mathrm{cat}}=m_c+m_h$；\textbf{不含石英砂}。因此 A11 中 $m_{\mathrm{cat}}=\SI{50}{\milli\gram}$。 & \si{\milli\gram} \\
+$\rho$ & $\mathrm{Co/SiO_2}$ 与 HAP 的装料质量比，$\rho=m_c/m_h$。仅对 $m_h>0$ 的普通二元组合定义；\textbf{A11 不定义 $\rho$}。 & -- \\
+$q_{\mathrm{EtOH}}$ & 乙醇进料条件。原题称“乙醇浓度”，但附件给出的数值单位为 mL/min；全文保留这一原始事实，不进一步解释为摩尔浓度或质量分数。 & \si{\milli\liter\per\minute} \\
+$z$ & 装料方式的哑变量：$z=0$ 表示装料方式 I，$z=1$ 表示装料方式 II。0/1 仅为编码，无大小优劣含义。 & -- \\
+\bottomrule
+\end{longtable}
+
+\section{数据结构与索引}
+
+\begin{longtable}{C{0.18\textwidth} L{0.52\textwidth} C{0.14\textwidth}}
+\toprule
+符号 & 统一含义 & 单位 \\
+\midrule
+\endfirsthead
+\toprule
+符号 & 统一含义 & 单位 \\
+\midrule
+\endhead
+$G$ & 附件1中的催化剂组合数，$G=21$，对应 A1--A14 与 B1--B7。 & 个 \\
+$N_1$ & 附件1的原始温度实验记录总数，$N_1=114$。该数值不等同于 114 个彼此独立的催化剂设计。 & 条 \\
+$N_2$ & 附件2的时间观测数，$N_2=7$。 & 条 \\
+$i$ & 附件1催化剂组合索引，$i=1,\ldots,G$；A/B 编号只作为实验组标识。 & -- \\
+$j$ & 第 $i$ 个催化剂组合内部的温度观测索引，$j=1,\ldots,n_i$。 & -- \\
+$n_i$ & 第 $i$ 个催化剂组合实际拥有的温度观测数；附件1各组通常为 5--7 个，不要求相同。 & 个 \\
+$k$ & 附件2时间观测索引，$k=1,\ldots,N_2$。附件2未给出对应 A/B 编号，因此 $k$ 不与任何 $i$ 强行对应。 & -- \\
+$T_{ij}$ & 附件1中组合 $i$ 的第 $j$ 个实测温度。未记录的温度视为“未实验”，不补成 0。 & \si{\degreeCelsius} \\
+$X_{ij},S_{ij},Y_{ij}$ & 附件1组合 $i$ 在第 $j$ 个温度点的乙醇转化率、$\mathrm{C}_4$ 烯烃选择性和 $\mathrm{C}_4$ 烯烃收率；此处 $S_{ij}\equiv S_{\mathrm{C4},ij}$、$Y_{ij}\equiv Y_{\mathrm{C4},ij}$。 & \% \\
+$t_k^{(2)}$ & 附件2第 $k$ 个实测反应时间。上标 $(2)$ 仅表示数据来自附件2。 & \si{\minute} \\
+$X_k^{(2)},S_k^{(2)},Y_k^{(2)}$ & 附件2第 $k$ 个时间点的乙醇转化率、$\mathrm{C}_4$ 烯烃选择性和派生收率。 & \% \\
+\bottomrule
+\end{longtable}
+
+\section{建模、检验与优化的保留符号}
+
+下列符号供后续四问统一调用；只有实际使用时才写入正文，\textbf{不默认进入论文正式“符号说明”表}。
+
+\begin{longtable}{C{0.18\textwidth} L{0.52\textwidth} C{0.14\textwidth}}
+\toprule
+符号 & 统一含义 & 单位 \\
+\midrule
+\endfirsthead
+\toprule
+符号 & 统一含义 & 单位 \\
+\midrule
+\endhead
+$R$ & 通用响应变量，占位表示 $X_{\mathrm{EtOH}}$、$S_{\mathrm{C4}}$ 或 $Y_{\mathrm{C4}}$ 中之一；具体章节优先直接写相应物理符号。 & 与响应一致 \\
+$\widehat{R}$ & 模型对响应变量 $R$ 的预测值。 & 与响应一致 \\
+$e$ & 预测残差，统一定义为 $e=R-\widehat{R}$。 & 与响应一致 \\
+$\varepsilon$ & 统计模型中的随机误差项。 & 与响应一致 \\
+$p$ & 当前候选模型的自由参数个数；用于模型复杂度比较。 & 个 \\
+$R^2$ & 决定系数，仅描述拟合解释程度，不单独作为最终选模依据。 & -- \\
+$\mathrm{RMSE}$ & 均方根误差。对以百分数记录的 $X,S,Y$，其数值单位为百分点。 & 百分点 \\
+$\mathrm{RMSE}_{\mathrm{LOO}}$ & 留一预测的均方根误差，用于极小样本曲线的预测能力比较。 & 百分点 \\
+$\bm{x}$ & 问题三/四中可行实验条件向量；若采用当前推荐参数化，可写为 $(T,\omega_{\mathrm{Co}},m_{\mathrm{cat}},\rho,q_{\mathrm{EtOH}},z)^{\mathsf T}$。 & 混合单位 \\
+$\Omega$ & 由原实验取值范围、非负性、装料方式和温度等约束形成的可行域。 & -- \\
+$\bm{x}^{\star}$ & 在既定目标与可行域下得到的最优实验条件。 & 混合单位 \\
+$Y_{\mathrm{C4}}^{\star}$ & 与 $\bm{x}^{\star}$ 对应的最优 $\mathrm{C}_4$ 烯烃收率。 & \% \\
+$\kappa$ & \textbf{备用工程派生量：}$\kappa=m_{\mathrm{cat}}/q_{\mathrm{EtOH}}$，仅表示单位乙醇进料条件对应的催化材料用量。它\textbf{不是}真实停留时间，也\textbf{不是}严格 WHSV。 & {\scriptsize$\mathrm{mg\cdot min/mL}$} \\
+\bottomrule
+\end{longtable}
+
+\section{必须遵守的符号约定}
+
+\begin{itemize}
+  \item \textbf{百分数尺度统一：}附件中的 $X_{\mathrm{EtOH}}$、$S_g$、$Y_{\mathrm{C4}}$ 全部按 0--100 的百分数尺度使用，因此 $Y_{\mathrm{C4}}=X_{\mathrm{EtOH}}S_{\mathrm{C4}}/100$，不能漏除以 100。
+  \item \textbf{A11 单独处理：}A11 为“\SI{50}{\milli\gram} $1\,\mathrm{wt}\%\mathrm{Co/SiO_2}$ + \SI{90}{\milli\gram} 石英砂、无 HAP”。A11 不是普通 $1{:}0$ HAP 配比点，故 $\rho$ 对 A11 不定义，$m_q$ 与 $m_{\mathrm{cat}}$ 也必须分开。
+  \item \textbf{附件2身份未知：}附件2只说明在 \SI{350}{\degreeCelsius} 下测试“某种催化剂组合”，不得将其写成 A1、A12、B1 等任何已知编号。
+  \item \textbf{A/B 编号不是物理变量：}A1--A14、B1--B7用于定位实验组；问题二至四应优先使用 $\omega_{\mathrm{Co}},m_{\mathrm{cat}},\rho,q_{\mathrm{EtOH}},z,T$ 等有物理意义的量。
+  \item \textbf{避免数学冗余：}若总体模型采用“总装料量 + 装料比”的参数化，则不再同时无约束加入 $m_c$、$m_h$、$m_{\mathrm{cat}}$、$\rho$ 四个变量，以免产生确定性共线性。
+  \item \textbf{单位不擅自改义：}$q_{\mathrm{EtOH}}$ 只称“乙醇进料条件（原题称乙醇浓度）”，除非另有题外实验信息，不把 mL/min 改解释为 mol/L、质量分数等浓度单位。
+  \item \textbf{正式论文是本表子集：}正式“符号说明”只保留全文反复出现的全局主变量；索引、残差、自由参数数目及备用工程量等按需在首次出现处说明。
+\end{itemize}
+
+\end{document}
