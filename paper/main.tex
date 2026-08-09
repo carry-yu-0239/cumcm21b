@@ -1,0 +1,36 @@
+%! TEX program = xelatex
+% CUMCM 数学建模论文脚手架
+% Compile: latexmk -xelatex main.tex
+\documentclass[UTF8,zihao=-4,a4paper,fontset=fandol]{ctexart}
+
+% ==================== 优先修改区域 ====================
+\newcommand{\PaperTitle}{【待填写论文标题】}
+\newcommand{\ProblemNumber}{【待填写题号】}
+% =====================================================
+
+\input{settings}
+
+\begin{document}
+\pagenumbering{arabic}
+\setcounter{page}{1}
+\pagestyle{cumcm}
+
+% 电子版第一页为摘要页，不放承诺书、编号页或目录。
+\input{sections/00_abstract}
+\clearpage
+
+\input{sections/01_problem}
+\input{sections/02_analysis}
+\input{sections/03_assumptions}
+\input{sections/04_symbols}
+\input{sections/06_problem1}
+\input{sections/07_problem2}
+\input{sections/08_problem3}
+\input{sections/09_evaluation}
+\input{sections/10_conclusion}
+\input{sections/11_references}
+
+\appendix
+\input{sections/12_appendix}
+
+\end{document}
