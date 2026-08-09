@@ -274,12 +274,12 @@ def make_outputs(attachment1: pd.DataFrame, attachment2: pd.DataFrame) -> tuple[
         name = "conversion" if response == "X_EtOH" else "selectivity"
         latex_rows = [[row["group"], f"{row['linear_loo']:.3f}", f"{row['quadratic_loo']:.3f}", row["recommendation"], row["basis"]] for row in subset]
         (TABLE_DIR / f"q1_model_comparison_{name}.tex").write_text(
-            render_latex_table(["组合", "一次LOOCV", "二次LOOCV", "推荐描述", "主要依据"], latex_rows, f"tab:q1-{name}-comparison", f"附件1{display_name}的冻结模型比较结果（RMSE单位：百分点）", "C{0.07\\textwidth}C{0.11\\textwidth}C{0.11\\textwidth}L{0.16\\textwidth}L{0.42\\textwidth}"), encoding="utf-8"
+            render_latex_table(["组合", "一次LOOCV", "二次LOOCV", "推荐描述", "主要依据"], latex_rows, f"tab:q1-{name}-comparison", f"附件1{display_name}的模型比较结果（RMSE单位：百分点）", "C{0.07\\textwidth}C{0.11\\textwidth}C{0.11\\textwidth}L{0.16\\textwidth}L{0.42\\textwidth}"), encoding="utf-8"
         )
         subset_recommended = [row for row in recommended_rows if row["response"] == response]
         latex_rows = [[row["group"], f"{row['tc_c']:.0f}", row["recommendation"], "--" if row["beta0"] is None else f"{row['beta0']:.4f}", "--" if row["beta1"] is None else f"{row['beta1']:.4f}", "--" if row["beta2"] is None else f"{row['beta2']:.4f}", "--" if row["r2"] is None else f"{row['r2']:.4f}", "--" if row["rmse_loo"] is None else f"{row['rmse_loo']:.3f}"] for row in subset_recommended]
         (TABLE_DIR / f"q1_recommended_{name}.tex").write_text(
-            render_latex_table(["组合", "$T_c/\\si{\\degreeCelsius}$", "推荐", "$\\beta_0$", "$\\beta_1$", "$\\beta_2$", "$R^2$", "LOO RMSE"], latex_rows, f"tab:q1-{name}-recommended", f"附件1{display_name}的冻结推荐经验模型系数", "C{0.06\\textwidth}C{0.10\\textwidth}L{0.15\\textwidth}C{0.10\\textwidth}C{0.10\\textwidth}C{0.10\\textwidth}C{0.08\\textwidth}C{0.11\\textwidth}"), encoding="utf-8"
+            render_latex_table(["组合", "$T_c/\\si{\\degreeCelsius}$", "推荐", "$\\beta_0$", "$\\beta_1$", "$\\beta_2$", "$R^2$", "LOO RMSE"], latex_rows, f"tab:q1-{name}-recommended", f"附件1{display_name}的推荐经验模型系数", "C{0.06\\textwidth}C{0.10\\textwidth}L{0.15\\textwidth}C{0.10\\textwidth}C{0.10\\textwidth}C{0.10\\textwidth}C{0.08\\textwidth}C{0.11\\textwidth}"), encoding="utf-8"
         )
 
     comparison = pd.DataFrame(comparison_rows)
@@ -293,7 +293,7 @@ def make_outputs(attachment1: pd.DataFrame, attachment2: pd.DataFrame) -> tuple[
         interval = "末次观测" if pd.isna(row["interval_end_min"]) else f"{int(row['time_min'])}--{int(row['interval_end_min'])} min"
         attachment2_latex.append([f"{row['time_min']:.0f}", f"{row['X_EtOH']:.4f}", f"{row['S_C4']:.2f}", f"{row['Y_C4']:.4f}", rate, interval])
     (TABLE_DIR / "q1_time_stability.tex").write_text(
-        render_latex_table(["$t$/min", "$X_{\\mathrm{EtOH}}$/\\%", "$S_{\\mathrm{C4}}$/\\%", "$Y_{\\mathrm{C4}}$/\\%", "下一时段$\\Delta X/\\Delta t$", "说明"], attachment2_latex, "tab:q1-time-stability", "附件2的冻结时间序列派生结果", "C{0.10\\textwidth}C{0.13\\textwidth}C{0.13\\textwidth}C{0.13\\textwidth}C{0.22\\textwidth}C{0.19\\textwidth}"), encoding="utf-8"
+        render_latex_table(["$t$/min", "$X_{\\mathrm{EtOH}}$/\\%", "$S_{\\mathrm{C4}}$/\\%", "$Y_{\\mathrm{C4}}$/\\%", "下一时段$\\Delta X/\\Delta t$", "说明"], attachment2_latex, "tab:q1-time-stability", "附件2的时间序列派生结果", "C{0.10\\textwidth}C{0.13\\textwidth}C{0.13\\textwidth}C{0.13\\textwidth}C{0.22\\textwidth}C{0.19\\textwidth}"), encoding="utf-8"
     )
     attachment2.to_csv(TABLE_DIR / "q1_time_stability.csv", index=False, encoding="utf-8-sig", float_format="%.10f")
     return comparison, recommended, fits

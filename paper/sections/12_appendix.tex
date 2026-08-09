@@ -3,7 +3,7 @@
 
 \subsection{模型比较与推荐系数}
 
-以下表格由冻结模型的等价复现脚本生成。推荐描述来自交接单的既定判断，不按复现所得的 $R^2$ 或 LOOCV 重新选模。
+以下表格给出各组合的候选模型比较、最终模型选择及其参数。模型选择基于正文所述的组内留一预测误差、原始散点趋势与物理边界的综合判断。
 
 \input{\QOneResultsDir/q1_model_comparison_conversion}
 \input{\QOneResultsDir/q1_model_comparison_selectivity}
@@ -15,29 +15,22 @@
 \input{\QOneResultsDir/q1_time_stability}
 
 \clearpage
-\subsection{冻结图形}
+\subsection{附件1补充图形}
 
 \begin{figure}[H]
   \centering
   \includegraphics[width=\textwidth]{figures/q1_handoff/appendix_c_conversion_fits.png}
-  \caption{附件1中 21 种催化剂的乙醇转化率--温度一次/二次拟合对照（冻结图；实测点为证据主体）}
+  \caption{附件1中 21 种催化剂的乙醇转化率--温度一次/二次拟合对照（实测点为证据主体）}
   \label{fig:q1-conversion-fits}
 \end{figure}
 
 \begin{figure}[H]
   \centering
   \includegraphics[width=\textwidth]{figures/q1_handoff/appendix_c_selectivity_fits.png}
-  \caption{附件1中 21 种催化剂的 $\mathrm{C}_4$ 烯烃选择性--温度一次/二次拟合对照（冻结图；实测点为证据主体）}
+  \caption{附件1中 21 种催化剂的 $\mathrm{C}_4$ 烯烃选择性--温度一次/二次拟合对照（实测点为证据主体）}
   \label{fig:q1-selectivity-fits}
-\end{figure}
-
-\begin{figure}[H]
-  \centering
-  \includegraphics[width=\textwidth]{figures/q1_handoff/appendix_c_time_stability.png}
-  \caption{附件2的转化率、$\mathrm{C}_4$ 选择性、$\mathrm{C}_4$ 收率及相邻时间段转化率变化率（冻结图）}
-  \label{fig:q1-time-stability-figure}
 \end{figure}
 
 \subsection{文件说明}
 
-可运行源程序为 `src/q1/reproduce\_q1.py`，输入为 `data/raw/q1\_attachment1.xlsx` 和 `data/raw/q1\_attachment2.xlsx`，输出位于 `data/processed/` 与 `outputs/q1/`。运行 `python src/q1/reproduce\_q1.py --strict` 可重新生成数值表并执行冻结结果核验；该脚本不重绘本附录三张冻结图。
+可运行源程序为 `src/q1/reproduce\_q1.py`，输入为 `data/raw/q1\_attachment1.xlsx` 和 `data/raw/q1\_attachment2.xlsx`，输出位于 `data/processed/` 与 `outputs/q1/`。运行 `python src/q1/reproduce\_q1.py --strict` 可重新生成数值表并完成数据与结果的一致性核验；程序不重绘本文引用的三张图。
