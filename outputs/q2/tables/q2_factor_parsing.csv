@@ -1,0 +1,22 @@
+﻿group,catalyst_description,co_loading_wt_pct,co_sio2_mass_mg,hap_mass_mg,quartz_sand_mass_mg,total_catalyst_mg,ratio_key,ethanol_feed_ml_min,packing_mode_label,is_a11_special
+A1,200mg 1wt%Co/SiO2- 200mg HAP-乙醇浓度1.68ml/min,1.00,200.00,200.00,0.00,400.00,1:1,1.68,I,False
+A2,200mg 2wt%Co/SiO2- 200mg HAP-乙醇浓度1.68ml/min,2.00,200.00,200.00,0.00,400.00,1:1,1.68,I,False
+A3,200mg 1wt%Co/SiO2- 200mg HAP-乙醇浓度0.9ml/min,1.00,200.00,200.00,0.00,400.00,1:1,0.90,I,False
+A4,200mg 0.5wt%Co/SiO2- 200mg HAP-乙醇浓度1.68ml/min,0.50,200.00,200.00,0.00,400.00,1:1,1.68,I,False
+A5,200mg 2wt%Co/SiO2- 200mg HAP-乙醇浓度0.3ml/min,2.00,200.00,200.00,0.00,400.00,1:1,0.30,I,False
+A6,200mg 5wt%Co/SiO2- 200mg HAP-乙醇浓度1.68ml/min,5.00,200.00,200.00,0.00,400.00,1:1,1.68,I,False
+A7,50mg 1wt%Co/SiO2- 50mg HAP-乙醇浓度0.3ml/min,1.00,50.00,50.00,0.00,100.00,1:1,0.30,I,False
+A8,50mg 1wt%Co/SiO2- 50mg HAP-乙醇浓度0.9ml/min,1.00,50.00,50.00,0.00,100.00,1:1,0.90,I,False
+A9,50mg 1wt%Co/SiO2- 50mg HAP-乙醇浓度2.1ml/min,1.00,50.00,50.00,0.00,100.00,1:1,2.10,I,False
+A10,50mg 5wt%Co/SiO2-  50mg HAP-乙醇浓度2.1ml/min,5.00,50.00,50.00,0.00,100.00,1:1,2.10,I,False
+A11,50mg 1wt%Co/SiO2+  90mg石英砂-乙醇浓度1.68ml/min，无HAP,1.00,50.00,0.00,90.00,50.00,,1.68,I,True
+A12,50mg 1wt%Co/SiO2- 50mg HAP-乙醇浓度1.68ml/min,1.00,50.00,50.00,0.00,100.00,1:1,1.68,I,False
+A13,67mg 1wt%Co/SiO2- 33mg HAP-乙醇浓度1.68ml/min     ,1.00,67.00,33.00,0.00,100.00,67:33,1.68,I,False
+A14,33mg 1wt%Co/SiO2- 67mg HAP-乙醇浓度1.68ml/min    ,1.00,33.00,67.00,0.00,100.00,33:67,1.68,I,False
+B1,50mg 1wt%Co/SiO2- 50mg HAP-乙醇浓度1.68ml/min,1.00,50.00,50.00,0.00,100.00,1:1,1.68,II,False
+B2,100mg 1wt%Co/SiO2- 100mg HAP-乙醇浓度1.68ml/min  ,1.00,100.00,100.00,0.00,200.00,1:1,1.68,II,False
+B3,10mg 1wt%Co/SiO2- 10mg HAP-乙醇浓度1.68ml/min,1.00,10.00,10.00,0.00,20.00,1:1,1.68,II,False
+B4,25mg 1wt%Co/SiO2- 25mg HAP-乙醇浓度1.68ml/min,1.00,25.00,25.00,0.00,50.00,1:1,1.68,II,False
+B5,50mg 1wt%Co/SiO2- 50mg HAP-乙醇浓度2.1ml/min,1.00,50.00,50.00,0.00,100.00,1:1,2.10,II,False
+B6,75mg 1wt%Co/SiO2- 75mg HAP-乙醇浓度1.68ml/min,1.00,75.00,75.00,0.00,150.00,1:1,1.68,II,False
+B7,100mg 1wt%Co/SiO2- 100mg HAP-乙醇浓度0.9ml/min,1.00,100.00,100.00,0.00,200.00,1:1,0.90,II,False

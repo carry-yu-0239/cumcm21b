@@ -1,0 +1,13 @@
+﻿family_key,response,background_count,shared_temperatures_c,minimum_delta_pct_point,maximum_delta_pct_point,background_mean_deltas_pct_point,comparison_interpretation
+co_loading_wt_pct:1->5,S_C4,2,250/275/300/350,-39.76,-3.21,A1->A6: -34.35; A9->A10: -13.23,same direction; magnitude may vary by background
+co_loading_wt_pct:1->5,X_EtOH,2,250/275/300/350,-4.37,18.95,A1->A6: 11.93; A9->A10: -2.78,opposite directions across backgrounds
+ethanol_feed_ml_min:0.3->1.68,S_C4,2,250/275/300/350,0.42,20.35,A5->A2: 14.14; A7->A12: 1.99,same direction; magnitude may vary by background
+ethanol_feed_ml_min:0.3->1.68,X_EtOH,2,250/275/300/350,-38.69,31.07,A5->A2: 10.94; A7->A12: -28.89,opposite directions across backgrounds
+ethanol_feed_ml_min:0.9->1.68,S_C4,3,250/275/300/350,-3.63,29.93,A3->A1: 24.56; A8->A12: -1.52; B7->B2: -2.05,opposite directions across backgrounds
+ethanol_feed_ml_min:0.9->1.68,X_EtOH,3,250/275/300/350,-14.28,-1.64,A3->A1: -11.85; A8->A12: -7.05; B7->B2: -6.16,same direction; magnitude may vary by background
+ethanol_feed_ml_min:1.68->2.1,S_C4,2,250/275/300/350/400,-15.25,8.78,A12->A9: 4.04; B1->B5: -7.09,opposite directions across backgrounds
+ethanol_feed_ml_min:1.68->2.1,X_EtOH,2,250/275/300/350/400,-6.52,1.39,A12->A9: -2.46; B1->B5: -0.37,temperature-dependent direction within a background
+packing_mode:I->II,S_C4,2,250/275/300/350/400,-16.21,4.78,A9->B5: -9.16; A12->B1: 1.97,opposite directions across backgrounds
+packing_mode:I->II,X_EtOH,2,250/275/300/350/400,-0.94,4.18,A9->B5: 1.73; A12->B1: -0.36,opposite directions across backgrounds
+total_catalyst_mg:100->400,S_C4,2,250/275/300/350,-0.48,35.72,A12->A1: 29.47; A8->A3: 3.39,temperature-dependent direction within a background
+total_catalyst_mg:100->400,X_EtOH,2,250/275/300/350,0.63,17.22,A12->A1: 6.99; A8->A3: 11.79,same direction; magnitude may vary by background

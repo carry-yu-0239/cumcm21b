@@ -1,0 +1,17 @@
+﻿comparison,response,background_count,shared_temperatures_c,minimum_effect_pct_point,maximum_effect_pct_point,comparison_interpretation
+co_loading_wt_pct:1->5,S_C4,2,250/275/300/350,-39.76,-3.21,same direction; magnitude may vary by background
+co_loading_wt_pct:1->5,X_EtOH,2,250/275/300/350,-4.37,18.95,opposite directions across backgrounds
+ethanol_feed_ml_min:0.3->1.68,S_C4,2,250/275/300/350,0.42,20.35,same direction; magnitude may vary by background
+ethanol_feed_ml_min:0.3->1.68,X_EtOH,2,250/275/300/350,-38.69,31.07,opposite directions across backgrounds
+ethanol_feed_ml_min:0.9->1.68,S_C4,3,250/275/300/350,-3.63,29.93,opposite directions across backgrounds
+ethanol_feed_ml_min:0.9->1.68,X_EtOH,3,250/275/300/350,-14.28,-1.64,same direction; magnitude may vary by background
+ethanol_feed_ml_min:1.68->2.1,S_C4,2,250/275/300/350/400,-15.25,8.78,opposite directions across backgrounds
+ethanol_feed_ml_min:1.68->2.1,X_EtOH,2,250/275/300/350/400,-6.52,1.39,temperature-dependent direction within a background
+packing_mode:I->II,S_C4,2,250/275/300/350/400,-16.21,4.78,opposite directions across backgrounds
+packing_mode:I->II,X_EtOH,2,250/275/300/350/400,-0.94,4.18,opposite directions across backgrounds
+total_catalyst_mg:100->400,S_C4,2,250/275/300/350,-0.48,35.72,temperature-dependent direction within a background
+total_catalyst_mg:100->400,X_EtOH,2,250/275/300/350,0.63,17.22,same direction; magnitude may vary by background
+local rectangle: total_catalyst_mg__ethanol_feed_ml_min,X_EtOH,1,250/275/300/350,-8.10,-0.33,local second-order contrast; omission means span -6.30 to -3.71
+local rectangle: total_catalyst_mg__ethanol_feed_ml_min,S_C4,1,250/275/300/350,13.99,32.53,local second-order contrast; omission means span 23.93 to 30.11
+local rectangle: ethanol_feed_ml_min__packing_mode,X_EtOH,1,250/275/300/350/400,0.10,5.12,local second-order contrast; omission means span 1.33 to 2.59
+local rectangle: ethanol_feed_ml_min__packing_mode,S_C4,1,250/275/300/350/400,-20.99,-1.25,local second-order contrast; omission means span -13.60 to -8.67

@@ -1,0 +1,9 @@
+﻿factor,response,scope_qualified_conclusion,evidence
+Temperature,X_EtOH and S_C4,"Across all 21 observed combinations, the 250→350°C endpoint change is positive; local intervals may still be non-monotone.",q2_temperature_overall
+Co loading,X_EtOH,The 1→5 wt% contrast reverses direction across the two matched backgrounds.,q2_contrast_family_summary
+Co loading,S_C4,The 1→5 wt% contrast is negative in both reproducible backgrounds.,q2_contrast_family_summary
+Ethanol feed,X_EtOH and S_C4,No uniform main effect is asserted outside the matched temperature and background conditions.,q2_contrast_family_summary
+Co/SiO2:HAP ratio,X_EtOH and S_C4,"At fixed 100 mg total catalyst in the three-level block, higher HAP share aligns with higher conversion; selectivity is non-monotone.",q2_multilevel_matching_responses
+Total catalyst mass,X_EtOH and S_C4,The five-level packing-II block is non-monotone; its best equal-weight levels differ by response.,q2_multilevel_matching_responses
+Packing mode,X_EtOH and S_C4,The I/II contrast depends on ethanol-feed background; neither mode is globally superior.,q2_contrast_family_summary
+Local non-additivity,X_EtOH and S_C4,Only total catalyst mass–ethanol feed and ethanol feed–packing mode form complete local 2×2 structures under the five-factor matching rule.,q2_local_rectangle_interactions; q2_leave_one_temperature_sensitivity

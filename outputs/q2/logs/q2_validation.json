@@ -1,0 +1,80 @@
+{
+  "model": "基于温度分层匹配与跨背景效应对比的催化因素影响分析",
+  "checks": {
+    "raw_record_count_is_114": true,
+    "combination_count_is_21": true,
+    "responses_within_0_100": true,
+    "selectivity_balance_max_abs_error_le_0_1": true,
+    "a11_ratio_is_undefined": true,
+    "a11_excluded_from_matching_pool": true,
+    "common_temperature_set_is_250_275_300_350": true,
+    "temperature_X_21_of_21_positive": true,
+    "temperature_S_21_of_21_positive": true,
+    "temperature_X_mean_near_handoff": true,
+    "temperature_S_mean_near_handoff": true,
+    "strict_block_structure_matches_handoff": true,
+    "six_reproducible_contrast_families": true,
+    "two_complete_rectangles": true,
+    "qz_350_x_near_3_07": true,
+    "qz_350_s_near_minus_19_41": true,
+    "all_omission_signs_preserved": true
+  },
+  "passed": true,
+  "strict_blocks": {
+    "co_loading_wt_pct": [
+      "A4/A1/A2/A6",
+      "A9/A10"
+    ],
+    "total_catalyst_mg": [
+      "A12/A1",
+      "A8/A3",
+      "B3/B4/B1/B6/B2"
+    ],
+    "ratio_key": [
+      "A14/A12/A13"
+    ],
+    "ethanol_feed_ml_min": [
+      "A3/A1",
+      "A5/A2",
+      "A7/A8/A12/A9",
+      "B1/B5",
+      "B7/B2"
+    ],
+    "packing_mode": [
+      "A12/B1",
+      "A9/B5"
+    ]
+  },
+  "reproducible_families": [
+    "co_loading_wt_pct:1->5",
+    "ethanol_feed_ml_min:0.3->1.68",
+    "ethanol_feed_ml_min:0.9->1.68",
+    "ethanol_feed_ml_min:1.68->2.1",
+    "packing_mode:I->II",
+    "total_catalyst_mg:100->400"
+  ],
+  "rectangles": [
+    "ethanol_feed_ml_min × packing_mode",
+    "total_catalyst_mg × ethanol_feed_ml_min"
+  ],
+  "temperature_summary": [
+    {
+      "group": "ALL_21_SUMMARY",
+      "response": "X_EtOH_pct",
+      "positive_delta_count": 21,
+      "mean_delta_250_to_350_pct_point": 24.4612041522391,
+      "median_delta_250_to_350_pct_point": 21.53920994263529
+    },
+    {
+      "group": "ALL_21_SUMMARY",
+      "response": "S_C4_pct",
+      "positive_delta_count": 21,
+      "mean_delta_250_to_350_pct_point": 15.304285714285719,
+      "median_delta_250_to_350_pct_point": 16.79
+    }
+  ],
+  "source_hashes": {
+    "data\\raw\\q1_attachment1.xlsx": "de8e67e2c3fafb703553cb20e46f1a6db7109c5039bd50fd450c1e093a7080a3",
+    "docs\\handoffs\\q2_model_handoff.docx": "26f2db7bd2d4e88c12bf4eebf6ea79759a931a553eb04776f354744ea0a223c3"
+  }
+}

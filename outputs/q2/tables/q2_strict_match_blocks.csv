@@ -1,0 +1,14 @@
+﻿factor,block_id,groups,factor_levels,common_temperatures_c,fixed_background
+Co loading (wt%),co_loading_wt_pct:1,A4/A1/A2/A6,0.5/1/2/5,250/275/300/350,Total catalyst mass (mg)=400; Co/SiO2:HAP mass ratio=1:1; Ethanol feed (mL/min)=1.68; Packing mode=I
+Co loading (wt%),co_loading_wt_pct:2,A9/A10,1/5,250/275/300/350/400,Total catalyst mass (mg)=100; Co/SiO2:HAP mass ratio=1:1; Ethanol feed (mL/min)=2.1; Packing mode=I
+Total catalyst mass (mg),total_catalyst_mg:1,A12/A1,100/400,250/275/300/350,Co loading (wt%)=1; Co/SiO2:HAP mass ratio=1:1; Ethanol feed (mL/min)=1.68; Packing mode=I
+Total catalyst mass (mg),total_catalyst_mg:2,A8/A3,100/400,250/275/300/350/400,Co loading (wt%)=1; Co/SiO2:HAP mass ratio=1:1; Ethanol feed (mL/min)=0.9; Packing mode=I
+Total catalyst mass (mg),total_catalyst_mg:3,B3/B4/B1/B6/B2,20/50/100/150/200,250/275/300/350/400,Co loading (wt%)=1; Co/SiO2:HAP mass ratio=1:1; Ethanol feed (mL/min)=1.68; Packing mode=II
+Co/SiO2:HAP mass ratio,ratio_key:1,A14/A12/A13,33:67/1:1/67:33,250/275/300/350/400,Co loading (wt%)=1; Total catalyst mass (mg)=100; Ethanol feed (mL/min)=1.68; Packing mode=I
+Ethanol feed (mL/min),ethanol_feed_ml_min:1,A3/A1,0.9/1.68,250/275/300/325/350,Co loading (wt%)=1; Total catalyst mass (mg)=400; Co/SiO2:HAP mass ratio=1:1; Packing mode=I
+Ethanol feed (mL/min),ethanol_feed_ml_min:2,A5/A2,0.3/1.68,250/275/300/325/350,Co loading (wt%)=2; Total catalyst mass (mg)=400; Co/SiO2:HAP mass ratio=1:1; Packing mode=I
+Ethanol feed (mL/min),ethanol_feed_ml_min:3,A7/A8/A12/A9,0.3/0.9/1.68/2.1,250/275/300/350/400,Co loading (wt%)=1; Total catalyst mass (mg)=100; Co/SiO2:HAP mass ratio=1:1; Packing mode=I
+Ethanol feed (mL/min),ethanol_feed_ml_min:4,B1/B5,1.68/2.1,250/275/300/350/400,Co loading (wt%)=1; Total catalyst mass (mg)=100; Co/SiO2:HAP mass ratio=1:1; Packing mode=II
+Ethanol feed (mL/min),ethanol_feed_ml_min:5,B7/B2,0.9/1.68,250/275/300/350/400,Co loading (wt%)=1; Total catalyst mass (mg)=200; Co/SiO2:HAP mass ratio=1:1; Packing mode=II
+Packing mode,packing_mode:1,A9/B5,I/II,250/275/300/350/400,Co loading (wt%)=1; Total catalyst mass (mg)=100; Co/SiO2:HAP mass ratio=1:1; Ethanol feed (mL/min)=2.1
+Packing mode,packing_mode:2,A12/B1,I/II,250/275/300/350/400,Co loading (wt%)=1; Total catalyst mass (mg)=100; Co/SiO2:HAP mass ratio=1:1; Ethanol feed (mL/min)=1.68

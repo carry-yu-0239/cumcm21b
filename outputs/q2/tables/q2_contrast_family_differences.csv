@@ -1,0 +1,113 @@
+﻿family_key,factor,low_level,high_level,block_id,background,low_group,high_group,temperature_c,response,delta_pct_point
+co_loading_wt_pct:1->5,co_loading_wt_pct,1,5,co_loading_wt_pct:1,Total catalyst mass (mg)=400; Co/SiO2:HAP mass ratio=1:1; Ethanol feed (mL/min)=1.68; Packing mode=I,A1,A6,250.00,S_C4,-30.75
+co_loading_wt_pct:1->5,co_loading_wt_pct,1,5,co_loading_wt_pct:1,Total catalyst mass (mg)=400; Co/SiO2:HAP mass ratio=1:1; Ethanol feed (mL/min)=1.68; Packing mode=I,A1,A6,275.00,S_C4,-30.33
+co_loading_wt_pct:1->5,co_loading_wt_pct,1,5,co_loading_wt_pct:1,Total catalyst mass (mg)=400; Co/SiO2:HAP mass ratio=1:1; Ethanol feed (mL/min)=1.68; Packing mode=I,A1,A6,300.00,S_C4,-39.76
+co_loading_wt_pct:1->5,co_loading_wt_pct,1,5,co_loading_wt_pct:1,Total catalyst mass (mg)=400; Co/SiO2:HAP mass ratio=1:1; Ethanol feed (mL/min)=1.68; Packing mode=I,A1,A6,350.00,S_C4,-36.56
+co_loading_wt_pct:1->5,co_loading_wt_pct,1,5,co_loading_wt_pct:2,Total catalyst mass (mg)=100; Co/SiO2:HAP mass ratio=1:1; Ethanol feed (mL/min)=2.1; Packing mode=I,A9,A10,250.00,S_C4,-3.21
+co_loading_wt_pct:1->5,co_loading_wt_pct,1,5,co_loading_wt_pct:2,Total catalyst mass (mg)=100; Co/SiO2:HAP mass ratio=1:1; Ethanol feed (mL/min)=2.1; Packing mode=I,A9,A10,275.00,S_C4,-8.03
+co_loading_wt_pct:1->5,co_loading_wt_pct,1,5,co_loading_wt_pct:2,Total catalyst mass (mg)=100; Co/SiO2:HAP mass ratio=1:1; Ethanol feed (mL/min)=2.1; Packing mode=I,A9,A10,300.00,S_C4,-13.93
+co_loading_wt_pct:1->5,co_loading_wt_pct,1,5,co_loading_wt_pct:2,Total catalyst mass (mg)=100; Co/SiO2:HAP mass ratio=1:1; Ethanol feed (mL/min)=2.1; Packing mode=I,A9,A10,350.00,S_C4,-27.74
+co_loading_wt_pct:1->5,co_loading_wt_pct,1,5,co_loading_wt_pct:1,Total catalyst mass (mg)=400; Co/SiO2:HAP mass ratio=1:1; Ethanol feed (mL/min)=1.68; Packing mode=I,A1,A6,250.00,X_EtOH,11.32
+co_loading_wt_pct:1->5,co_loading_wt_pct,1,5,co_loading_wt_pct:1,Total catalyst mass (mg)=400; Co/SiO2:HAP mass ratio=1:1; Ethanol feed (mL/min)=1.68; Packing mode=I,A1,A6,275.00,X_EtOH,6.93
+co_loading_wt_pct:1->5,co_loading_wt_pct,1,5,co_loading_wt_pct:1,Total catalyst mass (mg)=400; Co/SiO2:HAP mass ratio=1:1; Ethanol feed (mL/min)=1.68; Packing mode=I,A1,A6,300.00,X_EtOH,10.51
+co_loading_wt_pct:1->5,co_loading_wt_pct,1,5,co_loading_wt_pct:1,Total catalyst mass (mg)=400; Co/SiO2:HAP mass ratio=1:1; Ethanol feed (mL/min)=1.68; Packing mode=I,A1,A6,350.00,X_EtOH,18.95
+co_loading_wt_pct:1->5,co_loading_wt_pct,1,5,co_loading_wt_pct:2,Total catalyst mass (mg)=100; Co/SiO2:HAP mass ratio=1:1; Ethanol feed (mL/min)=2.1; Packing mode=I,A9,A10,250.00,X_EtOH,-1.73
+co_loading_wt_pct:1->5,co_loading_wt_pct,1,5,co_loading_wt_pct:2,Total catalyst mass (mg)=100; Co/SiO2:HAP mass ratio=1:1; Ethanol feed (mL/min)=2.1; Packing mode=I,A9,A10,275.00,X_EtOH,-1.99
+co_loading_wt_pct:1->5,co_loading_wt_pct,1,5,co_loading_wt_pct:2,Total catalyst mass (mg)=100; Co/SiO2:HAP mass ratio=1:1; Ethanol feed (mL/min)=2.1; Packing mode=I,A9,A10,300.00,X_EtOH,-3.04
+co_loading_wt_pct:1->5,co_loading_wt_pct,1,5,co_loading_wt_pct:2,Total catalyst mass (mg)=100; Co/SiO2:HAP mass ratio=1:1; Ethanol feed (mL/min)=2.1; Packing mode=I,A9,A10,350.00,X_EtOH,-4.37
+ethanol_feed_ml_min:0.3->1.68,ethanol_feed_ml_min,0.3,1.68,ethanol_feed_ml_min:2,Co loading (wt%)=2; Total catalyst mass (mg)=400; Co/SiO2:HAP mass ratio=1:1; Packing mode=I,A5,A2,250.00,S_C4,16.11
+ethanol_feed_ml_min:0.3->1.68,ethanol_feed_ml_min,0.3,1.68,ethanol_feed_ml_min:2,Co loading (wt%)=2; Total catalyst mass (mg)=400; Co/SiO2:HAP mass ratio=1:1; Packing mode=I,A5,A2,275.00,S_C4,10.63
+ethanol_feed_ml_min:0.3->1.68,ethanol_feed_ml_min,0.3,1.68,ethanol_feed_ml_min:2,Co loading (wt%)=2; Total catalyst mass (mg)=400; Co/SiO2:HAP mass ratio=1:1; Packing mode=I,A5,A2,300.00,S_C4,9.48
+ethanol_feed_ml_min:0.3->1.68,ethanol_feed_ml_min,0.3,1.68,ethanol_feed_ml_min:2,Co loading (wt%)=2; Total catalyst mass (mg)=400; Co/SiO2:HAP mass ratio=1:1; Packing mode=I,A5,A2,350.00,S_C4,20.35
+ethanol_feed_ml_min:0.3->1.68,ethanol_feed_ml_min,0.3,1.68,ethanol_feed_ml_min:3,Co loading (wt%)=1; Total catalyst mass (mg)=100; Co/SiO2:HAP mass ratio=1:1; Packing mode=I,A7,A12,250.00,S_C4,0.42
+ethanol_feed_ml_min:0.3->1.68,ethanol_feed_ml_min,0.3,1.68,ethanol_feed_ml_min:3,Co loading (wt%)=1; Total catalyst mass (mg)=100; Co/SiO2:HAP mass ratio=1:1; Packing mode=I,A7,A12,275.00,S_C4,1.55
+ethanol_feed_ml_min:0.3->1.68,ethanol_feed_ml_min,0.3,1.68,ethanol_feed_ml_min:3,Co loading (wt%)=1; Total catalyst mass (mg)=100; Co/SiO2:HAP mass ratio=1:1; Packing mode=I,A7,A12,300.00,S_C4,2.38
+ethanol_feed_ml_min:0.3->1.68,ethanol_feed_ml_min,0.3,1.68,ethanol_feed_ml_min:3,Co loading (wt%)=1; Total catalyst mass (mg)=100; Co/SiO2:HAP mass ratio=1:1; Packing mode=I,A7,A12,350.00,S_C4,3.62
+ethanol_feed_ml_min:0.3->1.68,ethanol_feed_ml_min,0.3,1.68,ethanol_feed_ml_min:2,Co loading (wt%)=2; Total catalyst mass (mg)=400; Co/SiO2:HAP mass ratio=1:1; Packing mode=I,A5,A2,250.00,X_EtOH,-10.18
+ethanol_feed_ml_min:0.3->1.68,ethanol_feed_ml_min,0.3,1.68,ethanol_feed_ml_min:2,Co loading (wt%)=2; Total catalyst mass (mg)=400; Co/SiO2:HAP mass ratio=1:1; Packing mode=I,A5,A2,275.00,X_EtOH,4.77
+ethanol_feed_ml_min:0.3->1.68,ethanol_feed_ml_min,0.3,1.68,ethanol_feed_ml_min:2,Co loading (wt%)=2; Total catalyst mass (mg)=400; Co/SiO2:HAP mass ratio=1:1; Packing mode=I,A5,A2,300.00,X_EtOH,18.11
+ethanol_feed_ml_min:0.3->1.68,ethanol_feed_ml_min,0.3,1.68,ethanol_feed_ml_min:2,Co loading (wt%)=2; Total catalyst mass (mg)=400; Co/SiO2:HAP mass ratio=1:1; Packing mode=I,A5,A2,350.00,X_EtOH,31.07
+ethanol_feed_ml_min:0.3->1.68,ethanol_feed_ml_min,0.3,1.68,ethanol_feed_ml_min:3,Co loading (wt%)=1; Total catalyst mass (mg)=100; Co/SiO2:HAP mass ratio=1:1; Packing mode=I,A7,A12,250.00,X_EtOH,-18.21
+ethanol_feed_ml_min:0.3->1.68,ethanol_feed_ml_min,0.3,1.68,ethanol_feed_ml_min:3,Co loading (wt%)=1; Total catalyst mass (mg)=100; Co/SiO2:HAP mass ratio=1:1; Packing mode=I,A7,A12,275.00,X_EtOH,-25.57
+ethanol_feed_ml_min:0.3->1.68,ethanol_feed_ml_min,0.3,1.68,ethanol_feed_ml_min:3,Co loading (wt%)=1; Total catalyst mass (mg)=100; Co/SiO2:HAP mass ratio=1:1; Packing mode=I,A7,A12,300.00,X_EtOH,-33.07
+ethanol_feed_ml_min:0.3->1.68,ethanol_feed_ml_min,0.3,1.68,ethanol_feed_ml_min:3,Co loading (wt%)=1; Total catalyst mass (mg)=100; Co/SiO2:HAP mass ratio=1:1; Packing mode=I,A7,A12,350.00,X_EtOH,-38.69
+ethanol_feed_ml_min:0.9->1.68,ethanol_feed_ml_min,0.9,1.68,ethanol_feed_ml_min:1,Co loading (wt%)=1; Total catalyst mass (mg)=400; Co/SiO2:HAP mass ratio=1:1; Packing mode=I,A3,A1,250.00,S_C4,28.55
+ethanol_feed_ml_min:0.9->1.68,ethanol_feed_ml_min,0.9,1.68,ethanol_feed_ml_min:1,Co loading (wt%)=1; Total catalyst mass (mg)=400; Co/SiO2:HAP mass ratio=1:1; Packing mode=I,A3,A1,275.00,S_C4,29.39
+ethanol_feed_ml_min:0.9->1.68,ethanol_feed_ml_min,0.9,1.68,ethanol_feed_ml_min:1,Co loading (wt%)=1; Total catalyst mass (mg)=400; Co/SiO2:HAP mass ratio=1:1; Packing mode=I,A3,A1,300.00,S_C4,29.93
+ethanol_feed_ml_min:0.9->1.68,ethanol_feed_ml_min,0.9,1.68,ethanol_feed_ml_min:1,Co loading (wt%)=1; Total catalyst mass (mg)=400; Co/SiO2:HAP mass ratio=1:1; Packing mode=I,A3,A1,350.00,S_C4,10.36
+ethanol_feed_ml_min:0.9->1.68,ethanol_feed_ml_min,0.9,1.68,ethanol_feed_ml_min:3,Co loading (wt%)=1; Total catalyst mass (mg)=100; Co/SiO2:HAP mass ratio=1:1; Packing mode=I,A8,A12,250.00,S_C4,0.54
+ethanol_feed_ml_min:0.9->1.68,ethanol_feed_ml_min,0.9,1.68,ethanol_feed_ml_min:3,Co loading (wt%)=1; Total catalyst mass (mg)=100; Co/SiO2:HAP mass ratio=1:1; Packing mode=I,A8,A12,275.00,S_C4,-0.41
+ethanol_feed_ml_min:0.9->1.68,ethanol_feed_ml_min,0.9,1.68,ethanol_feed_ml_min:3,Co loading (wt%)=1; Total catalyst mass (mg)=100; Co/SiO2:HAP mass ratio=1:1; Packing mode=I,A8,A12,300.00,S_C4,-2.60
+ethanol_feed_ml_min:0.9->1.68,ethanol_feed_ml_min,0.9,1.68,ethanol_feed_ml_min:3,Co loading (wt%)=1; Total catalyst mass (mg)=100; Co/SiO2:HAP mass ratio=1:1; Packing mode=I,A8,A12,350.00,S_C4,-3.63
+ethanol_feed_ml_min:0.9->1.68,ethanol_feed_ml_min,0.9,1.68,ethanol_feed_ml_min:5,Co loading (wt%)=1; Total catalyst mass (mg)=200; Co/SiO2:HAP mass ratio=1:1; Packing mode=II,B7,B2,250.00,S_C4,-0.82
+ethanol_feed_ml_min:0.9->1.68,ethanol_feed_ml_min,0.9,1.68,ethanol_feed_ml_min:5,Co loading (wt%)=1; Total catalyst mass (mg)=200; Co/SiO2:HAP mass ratio=1:1; Packing mode=II,B7,B2,275.00,S_C4,-1.65
+ethanol_feed_ml_min:0.9->1.68,ethanol_feed_ml_min,0.9,1.68,ethanol_feed_ml_min:5,Co loading (wt%)=1; Total catalyst mass (mg)=200; Co/SiO2:HAP mass ratio=1:1; Packing mode=II,B7,B2,300.00,S_C4,-3.54
+ethanol_feed_ml_min:0.9->1.68,ethanol_feed_ml_min,0.9,1.68,ethanol_feed_ml_min:5,Co loading (wt%)=1; Total catalyst mass (mg)=200; Co/SiO2:HAP mass ratio=1:1; Packing mode=II,B7,B2,350.00,S_C4,-2.17
+ethanol_feed_ml_min:0.9->1.68,ethanol_feed_ml_min,0.9,1.68,ethanol_feed_ml_min:1,Co loading (wt%)=1; Total catalyst mass (mg)=400; Co/SiO2:HAP mass ratio=1:1; Packing mode=I,A3,A1,250.00,X_EtOH,-7.60
+ethanol_feed_ml_min:0.9->1.68,ethanol_feed_ml_min,0.9,1.68,ethanol_feed_ml_min:1,Co loading (wt%)=1; Total catalyst mass (mg)=400; Co/SiO2:HAP mass ratio=1:1; Packing mode=I,A3,A1,275.00,X_EtOH,-13.39
+ethanol_feed_ml_min:0.9->1.68,ethanol_feed_ml_min,0.9,1.68,ethanol_feed_ml_min:1,Co loading (wt%)=1; Total catalyst mass (mg)=400; Co/SiO2:HAP mass ratio=1:1; Packing mode=I,A3,A1,300.00,X_EtOH,-14.28
+ethanol_feed_ml_min:0.9->1.68,ethanol_feed_ml_min,0.9,1.68,ethanol_feed_ml_min:1,Co loading (wt%)=1; Total catalyst mass (mg)=400; Co/SiO2:HAP mass ratio=1:1; Packing mode=I,A3,A1,350.00,X_EtOH,-12.14
+ethanol_feed_ml_min:0.9->1.68,ethanol_feed_ml_min,0.9,1.68,ethanol_feed_ml_min:3,Co loading (wt%)=1; Total catalyst mass (mg)=100; Co/SiO2:HAP mass ratio=1:1; Packing mode=I,A8,A12,250.00,X_EtOH,-4.82
+ethanol_feed_ml_min:0.9->1.68,ethanol_feed_ml_min,0.9,1.68,ethanol_feed_ml_min:3,Co loading (wt%)=1; Total catalyst mass (mg)=100; Co/SiO2:HAP mass ratio=1:1; Packing mode=I,A8,A12,275.00,X_EtOH,-5.29
+ethanol_feed_ml_min:0.9->1.68,ethanol_feed_ml_min,0.9,1.68,ethanol_feed_ml_min:3,Co loading (wt%)=1; Total catalyst mass (mg)=100; Co/SiO2:HAP mass ratio=1:1; Packing mode=I,A8,A12,300.00,X_EtOH,-6.26
+ethanol_feed_ml_min:0.9->1.68,ethanol_feed_ml_min,0.9,1.68,ethanol_feed_ml_min:3,Co loading (wt%)=1; Total catalyst mass (mg)=100; Co/SiO2:HAP mass ratio=1:1; Packing mode=I,A8,A12,350.00,X_EtOH,-11.81
+ethanol_feed_ml_min:0.9->1.68,ethanol_feed_ml_min,0.9,1.68,ethanol_feed_ml_min:5,Co loading (wt%)=1; Total catalyst mass (mg)=200; Co/SiO2:HAP mass ratio=1:1; Packing mode=II,B7,B2,250.00,X_EtOH,-1.64
+ethanol_feed_ml_min:0.9->1.68,ethanol_feed_ml_min,0.9,1.68,ethanol_feed_ml_min:5,Co loading (wt%)=1; Total catalyst mass (mg)=200; Co/SiO2:HAP mass ratio=1:1; Packing mode=II,B7,B2,275.00,X_EtOH,-3.50
+ethanol_feed_ml_min:0.9->1.68,ethanol_feed_ml_min,0.9,1.68,ethanol_feed_ml_min:5,Co loading (wt%)=1; Total catalyst mass (mg)=200; Co/SiO2:HAP mass ratio=1:1; Packing mode=II,B7,B2,300.00,X_EtOH,-5.48
+ethanol_feed_ml_min:0.9->1.68,ethanol_feed_ml_min,0.9,1.68,ethanol_feed_ml_min:5,Co loading (wt%)=1; Total catalyst mass (mg)=200; Co/SiO2:HAP mass ratio=1:1; Packing mode=II,B7,B2,350.00,X_EtOH,-14.01
+ethanol_feed_ml_min:1.68->2.1,ethanol_feed_ml_min,1.68,2.1,ethanol_feed_ml_min:3,Co loading (wt%)=1; Total catalyst mass (mg)=100; Co/SiO2:HAP mass ratio=1:1; Packing mode=I,A12,A9,250.00,S_C4,-0.77
+ethanol_feed_ml_min:1.68->2.1,ethanol_feed_ml_min,1.68,2.1,ethanol_feed_ml_min:3,Co loading (wt%)=1; Total catalyst mass (mg)=100; Co/SiO2:HAP mass ratio=1:1; Packing mode=I,A12,A9,275.00,S_C4,1.57
+ethanol_feed_ml_min:1.68->2.1,ethanol_feed_ml_min,1.68,2.1,ethanol_feed_ml_min:3,Co loading (wt%)=1; Total catalyst mass (mg)=100; Co/SiO2:HAP mass ratio=1:1; Packing mode=I,A12,A9,300.00,S_C4,4.88
+ethanol_feed_ml_min:1.68->2.1,ethanol_feed_ml_min,1.68,2.1,ethanol_feed_ml_min:3,Co loading (wt%)=1; Total catalyst mass (mg)=100; Co/SiO2:HAP mass ratio=1:1; Packing mode=I,A12,A9,350.00,S_C4,8.78
+ethanol_feed_ml_min:1.68->2.1,ethanol_feed_ml_min,1.68,2.1,ethanol_feed_ml_min:3,Co loading (wt%)=1; Total catalyst mass (mg)=100; Co/SiO2:HAP mass ratio=1:1; Packing mode=I,A12,A9,400.00,S_C4,5.74
+ethanol_feed_ml_min:1.68->2.1,ethanol_feed_ml_min,1.68,2.1,ethanol_feed_ml_min:4,Co loading (wt%)=1; Total catalyst mass (mg)=100; Co/SiO2:HAP mass ratio=1:1; Packing mode=II,B1,B5,250.00,S_C4,-2.02
+ethanol_feed_ml_min:1.68->2.1,ethanol_feed_ml_min,1.68,2.1,ethanol_feed_ml_min:4,Co loading (wt%)=1; Total catalyst mass (mg)=100; Co/SiO2:HAP mass ratio=1:1; Packing mode=II,B1,B5,275.00,S_C4,-3.19
+ethanol_feed_ml_min:1.68->2.1,ethanol_feed_ml_min,1.68,2.1,ethanol_feed_ml_min:4,Co loading (wt%)=1; Total catalyst mass (mg)=100; Co/SiO2:HAP mass ratio=1:1; Packing mode=II,B1,B5,300.00,S_C4,-4.36
+ethanol_feed_ml_min:1.68->2.1,ethanol_feed_ml_min,1.68,2.1,ethanol_feed_ml_min:4,Co loading (wt%)=1; Total catalyst mass (mg)=100; Co/SiO2:HAP mass ratio=1:1; Packing mode=II,B1,B5,350.00,S_C4,-10.63
+ethanol_feed_ml_min:1.68->2.1,ethanol_feed_ml_min,1.68,2.1,ethanol_feed_ml_min:4,Co loading (wt%)=1; Total catalyst mass (mg)=100; Co/SiO2:HAP mass ratio=1:1; Packing mode=II,B1,B5,400.00,S_C4,-15.25
+ethanol_feed_ml_min:1.68->2.1,ethanol_feed_ml_min,1.68,2.1,ethanol_feed_ml_min:3,Co loading (wt%)=1; Total catalyst mass (mg)=100; Co/SiO2:HAP mass ratio=1:1; Packing mode=I,A12,A9,250.00,X_EtOH,0.61
+ethanol_feed_ml_min:1.68->2.1,ethanol_feed_ml_min,1.68,2.1,ethanol_feed_ml_min:3,Co loading (wt%)=1; Total catalyst mass (mg)=100; Co/SiO2:HAP mass ratio=1:1; Packing mode=I,A12,A9,275.00,X_EtOH,-0.47
+ethanol_feed_ml_min:1.68->2.1,ethanol_feed_ml_min,1.68,2.1,ethanol_feed_ml_min:3,Co loading (wt%)=1; Total catalyst mass (mg)=100; Co/SiO2:HAP mass ratio=1:1; Packing mode=I,A12,A9,300.00,X_EtOH,-2.19
+ethanol_feed_ml_min:1.68->2.1,ethanol_feed_ml_min,1.68,2.1,ethanol_feed_ml_min:3,Co loading (wt%)=1; Total catalyst mass (mg)=100; Co/SiO2:HAP mass ratio=1:1; Packing mode=I,A12,A9,350.00,X_EtOH,-6.52
+ethanol_feed_ml_min:1.68->2.1,ethanol_feed_ml_min,1.68,2.1,ethanol_feed_ml_min:3,Co loading (wt%)=1; Total catalyst mass (mg)=100; Co/SiO2:HAP mass ratio=1:1; Packing mode=I,A12,A9,400.00,X_EtOH,-3.74
+ethanol_feed_ml_min:1.68->2.1,ethanol_feed_ml_min,1.68,2.1,ethanol_feed_ml_min:4,Co loading (wt%)=1; Total catalyst mass (mg)=100; Co/SiO2:HAP mass ratio=1:1; Packing mode=II,B1,B5,250.00,X_EtOH,0.71
+ethanol_feed_ml_min:1.68->2.1,ethanol_feed_ml_min,1.68,2.1,ethanol_feed_ml_min:4,Co loading (wt%)=1; Total catalyst mass (mg)=100; Co/SiO2:HAP mass ratio=1:1; Packing mode=II,B1,B5,275.00,X_EtOH,0.42
+ethanol_feed_ml_min:1.68->2.1,ethanol_feed_ml_min,1.68,2.1,ethanol_feed_ml_min:4,Co loading (wt%)=1; Total catalyst mass (mg)=100; Co/SiO2:HAP mass ratio=1:1; Packing mode=II,B1,B5,300.00,X_EtOH,-0.91
+ethanol_feed_ml_min:1.68->2.1,ethanol_feed_ml_min,1.68,2.1,ethanol_feed_ml_min:4,Co loading (wt%)=1; Total catalyst mass (mg)=100; Co/SiO2:HAP mass ratio=1:1; Packing mode=II,B1,B5,350.00,X_EtOH,-3.45
+ethanol_feed_ml_min:1.68->2.1,ethanol_feed_ml_min,1.68,2.1,ethanol_feed_ml_min:4,Co loading (wt%)=1; Total catalyst mass (mg)=100; Co/SiO2:HAP mass ratio=1:1; Packing mode=II,B1,B5,400.00,X_EtOH,1.39
+packing_mode:I->II,packing_mode,I,II,packing_mode:1,Co loading (wt%)=1; Total catalyst mass (mg)=100; Co/SiO2:HAP mass ratio=1:1; Ethanol feed (mL/min)=2.1,A9,B5,250.00,S_C4,-1.10
+packing_mode:I->II,packing_mode,I,II,packing_mode:1,Co loading (wt%)=1; Total catalyst mass (mg)=100; Co/SiO2:HAP mass ratio=1:1; Ethanol feed (mL/min)=2.1,A9,B5,275.00,S_C4,-4.62
+packing_mode:I->II,packing_mode,I,II,packing_mode:1,Co loading (wt%)=1; Total catalyst mass (mg)=100; Co/SiO2:HAP mass ratio=1:1; Ethanol feed (mL/min)=2.1,A9,B5,300.00,S_C4,-8.18
+packing_mode:I->II,packing_mode,I,II,packing_mode:1,Co loading (wt%)=1; Total catalyst mass (mg)=100; Co/SiO2:HAP mass ratio=1:1; Ethanol feed (mL/min)=2.1,A9,B5,350.00,S_C4,-15.70
+packing_mode:I->II,packing_mode,I,II,packing_mode:1,Co loading (wt%)=1; Total catalyst mass (mg)=100; Co/SiO2:HAP mass ratio=1:1; Ethanol feed (mL/min)=2.1,A9,B5,400.00,S_C4,-16.21
+packing_mode:I->II,packing_mode,I,II,packing_mode:2,Co loading (wt%)=1; Total catalyst mass (mg)=100; Co/SiO2:HAP mass ratio=1:1; Ethanol feed (mL/min)=1.68,A12,B1,250.00,S_C4,0.15
+packing_mode:I->II,packing_mode,I,II,packing_mode:2,Co loading (wt%)=1; Total catalyst mass (mg)=100; Co/SiO2:HAP mass ratio=1:1; Ethanol feed (mL/min)=1.68,A12,B1,275.00,S_C4,0.14
+packing_mode:I->II,packing_mode,I,II,packing_mode:2,Co loading (wt%)=1; Total catalyst mass (mg)=100; Co/SiO2:HAP mass ratio=1:1; Ethanol feed (mL/min)=1.68,A12,B1,300.00,S_C4,1.06
+packing_mode:I->II,packing_mode,I,II,packing_mode:2,Co loading (wt%)=1; Total catalyst mass (mg)=100; Co/SiO2:HAP mass ratio=1:1; Ethanol feed (mL/min)=1.68,A12,B1,350.00,S_C4,3.71
+packing_mode:I->II,packing_mode,I,II,packing_mode:2,Co loading (wt%)=1; Total catalyst mass (mg)=100; Co/SiO2:HAP mass ratio=1:1; Ethanol feed (mL/min)=1.68,A12,B1,400.00,S_C4,4.78
+packing_mode:I->II,packing_mode,I,II,packing_mode:1,Co loading (wt%)=1; Total catalyst mass (mg)=100; Co/SiO2:HAP mass ratio=1:1; Ethanol feed (mL/min)=2.1,A9,B5,250.00,X_EtOH,0.07
+packing_mode:I->II,packing_mode,I,II,packing_mode:1,Co loading (wt%)=1; Total catalyst mass (mg)=100; Co/SiO2:HAP mass ratio=1:1; Ethanol feed (mL/min)=2.1,A9,B5,275.00,X_EtOH,0.83
+packing_mode:I->II,packing_mode,I,II,packing_mode:1,Co loading (wt%)=1; Total catalyst mass (mg)=100; Co/SiO2:HAP mass ratio=1:1; Ethanol feed (mL/min)=2.1,A9,B5,300.00,X_EtOH,1.08
+packing_mode:I->II,packing_mode,I,II,packing_mode:1,Co loading (wt%)=1; Total catalyst mass (mg)=100; Co/SiO2:HAP mass ratio=1:1; Ethanol feed (mL/min)=2.1,A9,B5,350.00,X_EtOH,2.47
+packing_mode:I->II,packing_mode,I,II,packing_mode:1,Co loading (wt%)=1; Total catalyst mass (mg)=100; Co/SiO2:HAP mass ratio=1:1; Ethanol feed (mL/min)=2.1,A9,B5,400.00,X_EtOH,4.18
+packing_mode:I->II,packing_mode,I,II,packing_mode:2,Co loading (wt%)=1; Total catalyst mass (mg)=100; Co/SiO2:HAP mass ratio=1:1; Ethanol feed (mL/min)=1.68,A12,B1,250.00,X_EtOH,-0.03
+packing_mode:I->II,packing_mode,I,II,packing_mode:2,Co loading (wt%)=1; Total catalyst mass (mg)=100; Co/SiO2:HAP mass ratio=1:1; Ethanol feed (mL/min)=1.68,A12,B1,275.00,X_EtOH,-0.06
+packing_mode:I->II,packing_mode,I,II,packing_mode:2,Co loading (wt%)=1; Total catalyst mass (mg)=100; Co/SiO2:HAP mass ratio=1:1; Ethanol feed (mL/min)=1.68,A12,B1,300.00,X_EtOH,-0.19
+packing_mode:I->II,packing_mode,I,II,packing_mode:2,Co loading (wt%)=1; Total catalyst mass (mg)=100; Co/SiO2:HAP mass ratio=1:1; Ethanol feed (mL/min)=1.68,A12,B1,350.00,X_EtOH,-0.60
+packing_mode:I->II,packing_mode,I,II,packing_mode:2,Co loading (wt%)=1; Total catalyst mass (mg)=100; Co/SiO2:HAP mass ratio=1:1; Ethanol feed (mL/min)=1.68,A12,B1,400.00,X_EtOH,-0.94
+total_catalyst_mg:100->400,total_catalyst_mg,100,400,total_catalyst_mg:1,Co loading (wt%)=1; Co/SiO2:HAP mass ratio=1:1; Ethanol feed (mL/min)=1.68; Packing mode=I,A12,A1,250.00,S_C4,27.88
+total_catalyst_mg:100->400,total_catalyst_mg,100,400,total_catalyst_mg:1,Co loading (wt%)=1; Co/SiO2:HAP mass ratio=1:1; Ethanol feed (mL/min)=1.68; Packing mode=I,A12,A1,275.00,S_C4,29.32
+total_catalyst_mg:100->400,total_catalyst_mg,100,400,total_catalyst_mg:1,Co loading (wt%)=1; Co/SiO2:HAP mass ratio=1:1; Ethanol feed (mL/min)=1.68; Packing mode=I,A12,A1,300.00,S_C4,35.72
+total_catalyst_mg:100->400,total_catalyst_mg,100,400,total_catalyst_mg:1,Co loading (wt%)=1; Co/SiO2:HAP mass ratio=1:1; Ethanol feed (mL/min)=1.68; Packing mode=I,A12,A1,350.00,S_C4,24.95
+total_catalyst_mg:100->400,total_catalyst_mg,100,400,total_catalyst_mg:2,Co loading (wt%)=1; Co/SiO2:HAP mass ratio=1:1; Ethanol feed (mL/min)=0.9; Packing mode=I,A8,A3,250.00,S_C4,-0.13
+total_catalyst_mg:100->400,total_catalyst_mg,100,400,total_catalyst_mg:2,Co loading (wt%)=1; Co/SiO2:HAP mass ratio=1:1; Ethanol feed (mL/min)=0.9; Packing mode=I,A8,A3,275.00,S_C4,-0.48
+total_catalyst_mg:100->400,total_catalyst_mg,100,400,total_catalyst_mg:2,Co loading (wt%)=1; Co/SiO2:HAP mass ratio=1:1; Ethanol feed (mL/min)=0.9; Packing mode=I,A8,A3,300.00,S_C4,3.19
+total_catalyst_mg:100->400,total_catalyst_mg,100,400,total_catalyst_mg:2,Co loading (wt%)=1; Co/SiO2:HAP mass ratio=1:1; Ethanol feed (mL/min)=0.9; Packing mode=I,A8,A3,350.00,S_C4,10.96
+total_catalyst_mg:100->400,total_catalyst_mg,100,400,total_catalyst_mg:1,Co loading (wt%)=1; Co/SiO2:HAP mass ratio=1:1; Ethanol feed (mL/min)=1.68; Packing mode=I,A12,A1,250.00,X_EtOH,0.63
+total_catalyst_mg:100->400,total_catalyst_mg,100,400,total_catalyst_mg:1,Co loading (wt%)=1; Co/SiO2:HAP mass ratio=1:1; Ethanol feed (mL/min)=1.68; Packing mode=I,A12,A1,275.00,X_EtOH,2.38
+total_catalyst_mg:100->400,total_catalyst_mg,100,400,total_catalyst_mg:1,Co loading (wt%)=1; Co/SiO2:HAP mass ratio=1:1; Ethanol feed (mL/min)=1.68; Packing mode=I,A12,A1,300.00,X_EtOH,8.05
+total_catalyst_mg:100->400,total_catalyst_mg,100,400,total_catalyst_mg:1,Co loading (wt%)=1; Co/SiO2:HAP mass ratio=1:1; Ethanol feed (mL/min)=1.68; Packing mode=I,A12,A1,350.00,X_EtOH,16.89
+total_catalyst_mg:100->400,total_catalyst_mg,100,400,total_catalyst_mg:2,Co loading (wt%)=1; Co/SiO2:HAP mass ratio=1:1; Ethanol feed (mL/min)=0.9; Packing mode=I,A8,A3,250.00,X_EtOH,3.40
+total_catalyst_mg:100->400,total_catalyst_mg,100,400,total_catalyst_mg:2,Co loading (wt%)=1; Co/SiO2:HAP mass ratio=1:1; Ethanol feed (mL/min)=0.9; Packing mode=I,A8,A3,275.00,X_EtOH,10.48
+total_catalyst_mg:100->400,total_catalyst_mg,100,400,total_catalyst_mg:2,Co loading (wt%)=1; Co/SiO2:HAP mass ratio=1:1; Ethanol feed (mL/min)=0.9; Packing mode=I,A8,A3,300.00,X_EtOH,16.07
+total_catalyst_mg:100->400,total_catalyst_mg,100,400,total_catalyst_mg:2,Co loading (wt%)=1; Co/SiO2:HAP mass ratio=1:1; Ethanol feed (mL/min)=0.9; Packing mode=I,A8,A3,350.00,X_EtOH,17.22

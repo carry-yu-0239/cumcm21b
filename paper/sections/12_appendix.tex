@@ -27,10 +27,49 @@
 \begin{figure}[H]
   \centering
   \includegraphics[width=\textwidth]{figures/q1_handoff/appendix_c_selectivity_fits.png}
-  \caption{附件1中 21 种催化剂的 $\mathrm{C}_4$ 烯烃选择性--温度一次/二次拟合对照（实测点为证据主体）}
+  \caption{附件1中 21 种催化剂的 C4 烯烃选择性--温度一次/二次拟合对照（实测点为证据主体）}
   \label{fig:q1-selectivity-fits}
 \end{figure}
 
 \subsection{文件说明}
 
-可运行源程序为 `src/q1/reproduce\_q1.py`，输入为 `data/raw/q1\_attachment1.xlsx` 和 `data/raw/q1\_attachment2.xlsx`，输出位于 `data/processed/` 与 `outputs/q1/`。运行 `python src/q1/reproduce\_q1.py --strict` 可重新生成数值表并完成数据与结果的一致性核验；程序不重绘本文引用的三张图。
+可运行源程序为 src/q1/reproduce_q1.py，输入为 data/raw/q1_attachment1.xlsx 和 data/raw/q1_attachment2.xlsx，输出位于 data/processed/ 与 outputs/q1/。运行 python src/q1/reproduce_q1.py --strict 可重新生成数值表并完成数据与结果的一致性核验；程序不重绘本文引用的三张图。
+
+\clearpage
+\section{问题二补充结果}
+\label{app:q2-results}
+
+\input{\QTwoResultsDir/q2_factor_parsing}
+\input{\QTwoResultsDir/q2_strict_match_blocks}
+\input{\QTwoResultsDir/q2_multilevel_matching_responses}
+\input{\QTwoResultsDir/q2_contrast_family_differences}
+\input{\QTwoResultsDir/q2_contrast_family_summary}
+\input{\QTwoResultsDir/q2_local_rectangle_interactions}
+\input{\QTwoResultsDir/q2_leave_one_temperature_sensitivity}
+\input{\QTwoResultsDir/q2_specific_contrast_evidence}
+\input{\QTwoResultsDir/q2_factor_conclusions}
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=\textwidth]{\OutputsDir/q2/figures/q2_multilevel_blocks_S_C4.png}
+  \caption{四个主要多水平严格匹配块的 C4 烯烃选择性温度响应}
+\end{figure}
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=\textwidth]{\OutputsDir/q2/figures/q2_contrast_families_X_EtOH.png}
+  \caption{六类同对比族的乙醇转化率差分；横线为零差分}
+\end{figure}
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=\textwidth]{\OutputsDir/q2/figures/q2_local_rectangles_X_EtOH.png}
+  \caption{两个完整局部矩形的乙醇转化率二阶对比}
+\end{figure}
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=\textwidth]{\OutputsDir/q2/figures/q2_leave_one_temperature_sensitivity.png}
+  \caption{两个局部矩形的删一温度敏感性结果}
+  \label{fig:q2-sensitivity}
+\end{figure}

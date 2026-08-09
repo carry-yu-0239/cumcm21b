@@ -1,16 +1,103 @@
 \section{问题二模型的建立与求解}
 
-\subsection{问题二与前问的衔接}
-\todo{明确复用了哪些已确认的假设、变量、公式、参数；新增或修改哪些部分。}
+\subsection{实验因素解析与严格匹配规则}
 
-\subsection{模型建立}
-\todo{写出本问核心模型、约束与目标。}
+问题二的目标是解释现有实验设计内的条件响应差异，而不是由全部记录训练统一预测器。附件1的 114 条记录属于 21 个催化剂组合的组内温度观测；组合间的因素信息不能因温度重复而被放大。故分别以乙醇转化率 $X_{\mathrm{EtOH}}$ 和 C4 烯烃选择性 $S_{\mathrm{C4}}$ 为响应，不使用 C4 烯烃收率，也不把其它产物选择性作为 $S_{\mathrm{C4}}$ 的输入。
 
-\subsection{求解方法}
-\todo{说明求解算法、参数设置和停止条件。}
+由催化剂组合描述解析 Co 负载量、$\mathrm{Co/SiO_2}$ 质量 $m_c$、HAP 质量 $m_h$、石英砂质量 $m_q$、总催化材料质量 $m_{\mathrm{cat}}=m_c+m_h$、质量比 $\rho=m_c/m_h$、乙醇进料条件 $q_{\mathrm{EtOH}}$ 和装料方式 $z$。其中 A/B 仅为实验组标签，$z=0,1$ 分别表示方式 I、II。A11 为 \SI{50}{\milli\gram} $1\,\mathrm{wt}\%$ $\mathrm{Co/SiO_2}$ 与 \SI{90}{\milli\gram} 石英砂的组合，无 HAP，故 $\rho$ 不定义；该组保留在温度总体比较中，但不进入普通二元催化体系的匹配搜索。21 组解析结果见附录表~\ref{tab:q2-factor-parsing}。
 
-\subsection{结果与分析}
-\todo{引用 outputs/q2 中可追溯的图表和数值。}
+对普通含 HAP 的组合，定义因素向量
+\begin{equation}
+ \bm{x}_{i}=(\omega_{\mathrm{Co},i},m_{\mathrm{cat},i},\rho_i,q_{\mathrm{EtOH},i},z_i).
+ \label{eq:q2-factor-vector}
+\end{equation}
+当研究因素 $F$ 时，只有其余四个因素完全相同的两个组合才可比较，即
+\begin{equation}
+ i\sim_F j\Longleftrightarrow \bm{x}_{i,-F}=\bm{x}_{j,-F}.
+ \label{eq:q2-strict-match}
+\end{equation}
+按式~\eqref{eq:q2-strict-match} 自动形成的 13 个严格匹配块见附录表~\ref{tab:q2-strict-blocks}：Co 负载量、总装料量、配比、乙醇进料和装料方式分别得到 2、3、1、5 和 2 个块。所有比较只保留真实共同温度，未记录温度不补零、不插值。
 
-\subsection{模型检验}
-\todo{说明本问实际执行的稳定性、误差、残差、敏感性或对照检验。}
+\subsection{温度总体影响}
+
+21 个组合均在 $250,275,300,350\ ^\circ\mathrm{C}$ 留有实测记录。对任一响应 $R\in\{X_{\mathrm{EtOH}},S_{\mathrm{C4}}\}$，以同一组合的端点差
+\begin{equation}
+ D_{T,i}^{(R)}=R_i(350)-R_i(250)
+ \label{eq:q2-temperature-difference}
+\end{equation}
+描述温度总体方向；该差值不要求中间温区逐点单调。计算结果如表~\ref{tab:q2-temperature-overall} 所示，两个响应的 21 个端点差均为正；$X_{\mathrm{EtOH}}$ 的平均、中位变化分别为 24.46、21.54 个百分点，$S_{\mathrm{C4}}$ 分别为 15.30、16.79 个百分点。
+
+\begin{figure}[H]
+  \centering
+  \begin{subfigure}[b]{0.49\textwidth}
+    \includegraphics[width=\textwidth]{\OutputsDir/q2/figures/q2_temperature_trajectories_X_EtOH.png}
+    \caption{乙醇转化率}
+  \end{subfigure}
+  \begin{subfigure}[b]{0.49\textwidth}
+    \includegraphics[width=\textwidth]{\OutputsDir/q2/figures/q2_temperature_trajectories_S_C4.png}
+    \caption{C4 烯烃选择性}
+  \end{subfigure}
+  \caption{21 个组合在四个共同温度上的响应轨迹；粗线为组合等权平均}
+  \label{fig:q2-temperature-trajectories}
+\end{figure}
+
+图~\ref{fig:q2-temperature-trajectories} 表明，温度升高的端点促进方向在已有组合中最一致；但细线仍保留了部分局部回落，因而不将端点结果外推为任意温度区间的严格单调规律。
+
+\subsection{温度分层匹配及跨背景效应}
+
+对含有 $K_{F,b}$ 个共同温度、$L_{F,b}$ 个水平的严格匹配块 $\mathcal{B}_{F,b}$，用边际均值把响应写为
+\begin{equation}
+ R_{h\ell}^{(F,b)}
+ =\mu_{F,b}+\alpha_h^{(F,b)}
+ +\gamma_{\ell\mid B_b}^{(F,b)}
+ +e_{h\ell}^{(F,b)}.
+ \label{eq:q2-stratified-decomposition}
+\end{equation}
+其中 $\gamma_{\ell\mid B_b}^{(F,b)}=\bar R_{\cdot\ell}-\bar R_{\cdot\cdot}$ 是该固定背景和共同温度上的等权条件响应差异，$e_{h\ell}^{(F,b)}$ 是未被温度项和水平项解释的非加性偏差。逐温度曲线为主要证据，$\gamma$ 不被解释为跨背景的统一主效应。
+
+四个主要多水平块的曲线见图~\ref{fig:q2-multilevel-x}；相应的两响应均值、$\gamma$、逐温度值及曲线交叉情况列于附录表~\ref{tab:q2-multilevel}。在 A4/A1/A2/A6 块中，2 wt\% 的转化率等权均值为 32.15\%，而 1 wt\% 的选择性均值为 41.41\%，表现出两响应权衡。固定 $m_{\mathrm{cat}}=\SI{100}{\milli\gram}$ 的 A14/A12/A13 块中，HAP 占比较高对应更高的转化率，而选择性在当前三个离散水平上非单调，50:50 的等权均值最高。方式 II 的五水平总装料量块中，\SI{150}{\milli\gram} 的转化率均值最高（22.63\%），\SI{100}{\milli\gram} 的选择性均值最高（18.78\%），故不存在“总装料量越大越优”的结论。
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=\textwidth]{\OutputsDir/q2/figures/q2_multilevel_blocks_X_EtOH.png}
+  \caption{四个主要多水平严格匹配块的乙醇转化率温度响应}
+  \label{fig:q2-multilevel-x}
+\end{figure}
+
+对二水平比较统一以连续因素的高水平减低水平、装料方式的 II 减 I 定义差分：
+\begin{equation}
+ \Delta_{R,b}^{F:u\rightarrow v}(T)
+ =R(T,F=v,B_b)-R(T,F=u,B_b).
+ \label{eq:q2-contrast}
+\end{equation}
+仅把同一 $F:u\rightarrow v$ 合并为同对比族，并在所有背景的共同实测温度上比较。程序得到恰好 6 类至少有两个背景复现的同对比族，完整差分和摘要见附录表~\ref{tab:q2-contrast-detail}--表~\ref{tab:q2-contrast-summary}。
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=\textwidth]{\OutputsDir/q2/figures/q2_contrast_families_S_C4.png}
+  \caption{六类同对比族的 C4 烯烃选择性差分；横线为零差分}
+  \label{fig:q2-contrast-s}
+\end{figure}
+
+例如，Co 负载量从 1 wt\% 到 5 wt\% 时，A1$\rightarrow$A6 的转化率平均差为 $+11.93$ 个百分点，A9$\rightarrow$A10 为 $-2.78$ 个百分点，说明该变化对转化率存在跨背景方向反转；两背景的选择性平均差均为负。$q_{\mathrm{EtOH}}:0.9\rightarrow1.68$ 对转化率在三个背景中均为负，而选择性方向不一致；$q_{\mathrm{EtOH}}:1.68\rightarrow2.1$ 的选择性在方式 I 和 II 下方向相反。装料方式由 I 变为 II 时，$q_{\mathrm{EtOH}}=1.68$ 的选择性差为正，$q_{\mathrm{EtOH}}=2.1$ 则为负。因此，Co 负载量、乙醇进料和装料方式的结论均限定于相应的匹配背景与温度范围内。
+
+\subsection{局部二因素非加性及综合结论}
+
+在五因素定义下，固定其余三个因素并要求四格齐全，自动识别出两套局部 $2\times2$ 结构：$(m_{\mathrm{cat}},q_{\mathrm{EtOH}})$ 对应 A8/A12/A3/A1，$(q_{\mathrm{EtOH}},z)$ 对应 A12/A9/B1/B5。对任一响应，在百分点加法尺度定义二阶对比
+\begin{equation}
+ I_{F_1F_2}(T)=\left[R_{11}(T)-R_{10}(T)\right]
+ -\left[R_{01}(T)-R_{00}(T)\right].
+ \label{eq:q2-local-interaction}
+\end{equation}
+$I(T)=0$ 仅表示当前四格在该尺度上恰为加性；$I(T)\neq0$ 仅表示局部非加性，不能代替无重复条件下的统计显著交互检验。
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=\textwidth]{\OutputsDir/q2/figures/q2_local_rectangles_S_C4.png}
+  \caption{两个完整局部矩形的 C4 烯烃选择性二阶对比}
+  \label{fig:q2-local-s}
+\end{figure}
+
+在 $(m_{\mathrm{cat}},q_{\mathrm{EtOH}})$ 四格中，$I_{S_{\mathrm{C4}}}(T)$ 在四个共同温度均为正；在 $(q_{\mathrm{EtOH}},z)$ 四格中，$I_{S_{\mathrm{C4}}}(T)$ 在五个共同温度均为负，且高温段绝对值增大。后者在 \SI{350}{\degreeCelsius} 的二阶对比分别为 $I_{X_{\mathrm{EtOH}}}=3.07$、$I_{S_{\mathrm{C4}}}=-19.41$ 个百分点。删去任一共同温度后，两矩形的平均二阶对比均保持原符号，具体结果见附录表~\ref{tab:q2-sensitivity} 和图~\ref{fig:q2-sensitivity}；该检查只说明结果未由单一温度点驱动，不构成预测交叉验证。
+
+综合具体对比证据后，温度在 21 个已实验组合中的端点促进方向最一致；相比之下，催化剂组成与装料条件表现出非线性、响应权衡和条件依赖。Co 负载量对转化率可随背景反转，高 Co 负载量对选择性的不利方向在两个可复现背景中相对稳定；乙醇进料和装料方式均不存在脱离背景与温度的统一优劣。因素级结论及全部具体对比证据见附录表~\ref{tab:q2-conclusions} 与表~\ref{tab:q2-evidence}。
