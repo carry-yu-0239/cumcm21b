@@ -1,0 +1,18 @@
+{
+  "status": "PASS",
+  "checks": {
+    "record_count": true,
+    "group_count": true,
+    "all_yield_in_range": true,
+    "all_ranking": true,
+    "low_ranking": true,
+    "all_margin": true,
+    "low_margin": true,
+    "400c_missing_only_a1_a2": true
+  },
+  "source_sha256": "de8e67e2c3fafb703553cb20e46f1a6db7109c5039bd50fd450c1e093a7080a3",
+  "margins": {
+    "all_margin": 1.6073099999999982,
+    "low_margin": 6.464836
+  }
+}
