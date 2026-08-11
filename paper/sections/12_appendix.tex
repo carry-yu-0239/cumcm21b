@@ -15,40 +15,10 @@
 \input{\QOneResultsDir/q1_time_stability}
 
 \clearpage
-\subsection{附件1补充图形}
-
-\begin{figure}[H]
-  \centering
-  \includegraphics[width=\textwidth]{figures/q1_handoff/appendix_c_conversion_fits.png}
-  \caption{附件1中 21 种催化剂的乙醇转化率--温度一次/二次拟合对照（实测点为证据主体）}
-  \label{fig:q1-conversion-fits}
-\end{figure}
-
-\begin{figure}[H]
-  \centering
-  \includegraphics[width=\textwidth]{figures/q1_handoff/appendix_c_selectivity_fits.png}
-  \caption{附件1中 21 种催化剂的 C4 烯烃选择性--温度一次/二次拟合对照（实测点为证据主体）}
-  \label{fig:q1-selectivity-fits}
-\end{figure}
-
-\subsection{文件说明}
-
-可运行源程序为
-\path{src/q1/reproduce_q1.py}，
-输入为
-\path{data/raw/q1_attachment1.xlsx}
-和
-\path{data/raw/q1_attachment2.xlsx}，输出位于
-\path{data/processed/}
-与
-\path{outputs/q1/}。运行
-\nolinkurl{python src/q1/reproduce_q1.py --strict}
-可重新生成数值表并完成数据与结果的一致性核验；程序不重绘本文引用的三张图。
-
-\clearpage
 \section{问题二补充结果}
 \label{app:q2-results}
 
+\input{\QTwoResultsDir/q2_temperature_overall}
 \input{\QTwoResultsDir/q2_factor_parsing}
 \input{\QTwoResultsDir/q2_strict_match_blocks}
 \input{\QTwoResultsDir/q2_multilevel_matching_responses}
@@ -63,23 +33,4 @@
   \centering
   \includegraphics[width=\textwidth]{\OutputsDir/q2/figures/q2_multilevel_blocks_S_C4.png}
   \caption{四个主要多水平严格匹配块的 C4 烯烃选择性温度响应}
-\end{figure}
-
-\begin{figure}[H]
-  \centering
-  \includegraphics[width=\textwidth]{\OutputsDir/q2/figures/q2_contrast_families_X_EtOH.png}
-  \caption{六类同对比族的乙醇转化率差分；横线为零差分}
-\end{figure}
-
-\begin{figure}[H]
-  \centering
-  \includegraphics[width=\textwidth]{\OutputsDir/q2/figures/q2_local_rectangles_X_EtOH.png}
-  \caption{两个完整局部矩形的乙醇转化率二阶对比}
-\end{figure}
-
-\begin{figure}[H]
-  \centering
-  \includegraphics[width=\textwidth]{\OutputsDir/q2/figures/q2_leave_one_temperature_sensitivity.png}
-  \caption{两个局部矩形的删一温度敏感性结果}
-  \label{fig:q2-sensitivity}
 \end{figure}
