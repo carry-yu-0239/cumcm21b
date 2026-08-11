@@ -1,27 +1,28 @@
 \section{符号说明}
 
-本文主要符号如表~\ref{tab:symbols} 所示。符号、单位和百分数尺度均沿用队内母符号表；局部参数在首次出现处定义。
+本文主要符号如表~\ref{tab:symbols} 所示。符号、单位和百分数尺度均沿用队内母符号表；仅列出全文反复使用的全局变量，问题中特有的临时变量在首次出现处定义。
 
 \begin{table}[H]
   \centering
   \caption{主要符号说明}
   \label{tab:symbols}
-  \begin{tabularx}{\textwidth}{C{0.25\textwidth} X C{0.17\textwidth}}
+  \begin{tabularx}{\textwidth}{C{0.22\textwidth} X C{0.18\textwidth}}
     \toprule
     符号 & 含义 & 单位 \\
     \midrule
-    $T,t$ & 反应温度、反应时间 & \si{\degreeCelsius}，min \\
-    $X_{\mathrm{EtOH}}$ & 乙醇转化率，按原始百分数尺度记录 & \% \\
+    $T$ & 反应温度 & $^\circ C$ \\
+    $t$ & 反应时间 & min \\
+    $X_{\mathrm{EtOH}}$ & 乙醇转化率 & \% \\
     $S_{\mathrm{C4}}$ & $\mathrm{C}_4$ 烯烃选择性 & \% \\
     $Y_{\mathrm{C4}}$ & $\mathrm{C}_4$ 烯烃收率，$Y_{\mathrm{C4}}=X_{\mathrm{EtOH}}S_{\mathrm{C4}}/100$ & \% \\
     $\omega_{\mathrm{Co}}$ & Co 负载量 & wt\% \\
-    $m_c,m_h,m_q,m_{\mathrm{cat}}$ & Co/SiO2、HAP、石英砂质量及催化材料总装料量 & mg \\
-    $\rho$ & Co/SiO2 与 HAP 装料质量比，A11 不定义 & -- \\
-    $q_{\mathrm{EtOH}},z$ & 乙醇进料条件、装料方式哑变量（I 为 0，II 为 1） & mL/min，-- \\
+    $m_c,m_h,m_q,m_{\mathrm{cat}}$ & Co/$\mathrm{SiO_2}$、HAP、石英砂质量及催化材料总装料量 & mg \\
+    $\rho$ & Co/$\mathrm{SiO_2}$ 与 HAP 装料质量比，A11 不定义 & -- \\
+    $q_{\mathrm{EtOH}}$ & 乙醇进料条件 & mL/min \\
+    $z$ & 装料方式哑变量（I 为 0，II 为 1） & -- \\
     $G,N_1,N_2$ & 附件1组合数、附件1温度记录数、附件2时间观测数 & 个，条，条 \\
-    $i,j,k$ & 组合、组合内温度、附件2时间观测索引 & -- \\
-    $T_{ij},t_k^{(2)}$ & 附件1实测温度、附件2实测反应时间 & \si{\degreeCelsius}，min \\
-    $D_{T,i}^{(R)},\Delta_{R,b}^{F:u\rightarrow v},I_{F_1F_2}$ & 问题二的端点差、条件差分和局部二阶非加性对比 & 百分点 \\
+    $i,j,k$ & 催化剂组合、组合内温度观测、时间观测索引 & -- \\
+    $D_{T,i}^{(R)},\Delta_{R,b}^{F:u\rightarrow v},I_{F_1F_2}$ & 问题二中的端点差、条件差分和局部二阶非加性对比 & 百分点 \\
     \bottomrule
   \end{tabularx}
 \end{table}
