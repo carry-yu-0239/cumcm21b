@@ -441,7 +441,7 @@ def temperature_overall(records: pd.DataFrame) -> pd.DataFrame:
 
 def latex_escape(value: object) -> str:
     text = str(value)
-    for source, replacement in [("\\", r"\textbackslash{}"), ("&", r"\&"), ("%", r"\%"), ("_", r"\_\allowbreak"), ("#", r"\#")]:
+    for source, replacement in [("\\", r"\textbackslash{}"), ("&", r"\&"), ("%", r"\%"), ("_", r"\_\allowbreak{}"), ("#", r"\#")]:
         text = text.replace(source, replacement)
     return text
 

@@ -173,7 +173,7 @@ def make_tables(records: pd.DataFrame) -> dict[str, float]:
     all_rank, low_rank = rank(records, "all"), rank(records, "low")
     all_margin = float(all_rank.iloc[0]["Y_C4_pct"] - all_rank.iloc[1]["Y_C4_pct"])
     low_margin = float(low_rank.iloc[0]["Y_C4_pct"] - low_rank.iloc[1]["Y_C4_pct"])
-    write_table("q4_initial_rankings", ["优化任务", "第一名", "$Y_{(1)}$/%", "第二名", "$Y_{(2)}$/%", "决策裕度/百分点"], [
+    write_table("q4_initial_rankings", ["优化任务", "第一名", "$Y_{(1)}$/\\%", "第二名", "$Y_{(2)}$/\\%", "决策裕度/百分点"], [
         ["全温区", f"{all_rank.iloc[0]['group']}--{all_rank.iloc[0]['temperature_c']:.0f} ℃", f"{all_rank.iloc[0]['Y_C4_pct']:.6f}", f"{all_rank.iloc[1]['group']}--{all_rank.iloc[1]['temperature_c']:.0f} ℃", f"{all_rank.iloc[1]['Y_C4_pct']:.6f}", f"{all_margin:.6f}"],
         ["严格 $T<350$ ℃", f"{low_rank.iloc[0]['group']}--{low_rank.iloc[0]['temperature_c']:.0f} ℃", f"{low_rank.iloc[0]['Y_C4_pct']:.6f}", f"{low_rank.iloc[1]['group']}--{low_rank.iloc[1]['temperature_c']:.0f} ℃", f"{low_rank.iloc[1]['Y_C4_pct']:.6f}", f"{low_margin:.6f}"],
     ], "两类优化任务的当前观测排名与决策裕度", "tab:q4-initial-rankings", "L{0.17\\textwidth}C{0.16\\textwidth}C{0.13\\textwidth}C{0.16\\textwidth}C{0.13\\textwidth}C{0.15\\textwidth}")
@@ -190,7 +190,7 @@ def make_tables(records: pd.DataFrame) -> dict[str, float]:
             match = records.loc[(records["group"] == group) & (records["temperature_c"] == temperature), "Y_C4_pct"]
             row.append("未实验" if match.empty else f"{float(match.iloc[0]):.5f}")
         profiles.append(row)
-    write_table("q4_co_loading_profile", ["温度", "0.5 wt% (A4)", "1 wt% (A1)", "2 wt% (A2)", "5 wt% (A6)"], profiles, "Co 负载量严格匹配块的现有收率结构", "tab:q4-co-profile", "C{0.14\\textwidth}C{0.18\\textwidth}C{0.18\\textwidth}C{0.18\\textwidth}C{0.18\\textwidth}")
+    write_table("q4_co_loading_profile", ["温度", "0.5 wt\\% (A4)", "1 wt\\% (A1)", "2 wt\\% (A2)", "5 wt\\% (A6)"], profiles, "Co 负载量严格匹配块的现有收率结构", "tab:q4-co-profile", "C{0.14\\textwidth}C{0.18\\textwidth}C{0.18\\textwidth}C{0.18\\textwidth}C{0.18\\textwidth}")
     pair_rows = []
     for left, right, planned in [("A1", "A3", "E4：A1--400 ℃"), ("A2", "A5", "E3：A2--400 ℃")]:
         values = []
@@ -198,7 +198,7 @@ def make_tables(records: pd.DataFrame) -> dict[str, float]:
             match = records.loc[(records["group"] == group) & (records["temperature_c"] == 400), "Y_C4_pct"]
             values.append("未实验" if match.empty else f"{float(match.iloc[0]):.5f}")
         pair_rows.append([f"{left}/{right}", "乙醇进料条件", values[0], values[1], planned])
-    write_table("q4_feed_match_pairs", ["严格匹配对", "仅改变因素", "前者 400 ℃收率/%", "后者 400 ℃收率/%", "补全安排"], pair_rows, "400 ℃乙醇进料严格匹配对的补全安排", "tab:q4-feed-pairs", "C{0.15\\textwidth}C{0.17\\textwidth}C{0.18\\textwidth}C{0.18\\textwidth}C{0.18\\textwidth}")
+    write_table("q4_feed_match_pairs", ["严格匹配对", "仅改变因素", "前者 400 ℃收率/\\%", "后者 400 ℃收率/\\%", "补全安排"], pair_rows, "400 ℃乙醇进料严格匹配对的补全安排", "tab:q4-feed-pairs", "C{0.15\\textwidth}C{0.17\\textwidth}C{0.18\\textwidth}C{0.18\\textwidth}C{0.18\\textwidth}")
     return {"all_margin": all_margin, "low_margin": low_margin}
 
 
