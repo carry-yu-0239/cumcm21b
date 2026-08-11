@@ -1,22 +1,22 @@
-\begingroup\scriptsize
-\begin{longtable}{llllllll}
+\begingroup\scriptsize\setlength{\tabcolsep}{1.5pt}\renewcommand{\arraystretch}{1.1}
+\begin{longtable}{>{\raggedright\arraybackslash}p{0.112\linewidth} >{\raggedright\arraybackslash}p{0.112\linewidth} >{\raggedright\arraybackslash}p{0.112\linewidth} >{\raggedright\arraybackslash}p{0.112\linewidth} >{\raggedright\arraybackslash}p{0.112\linewidth} >{\raggedright\arraybackslash}p{0.112\linewidth} >{\raggedright\arraybackslash}p{0.112\linewidth} >{\raggedright\arraybackslash}p{0.112\linewidth}}
 \caption{Six cross-background contrast-family summaries}\label{tab:q2-contrast-summary}\\
 \toprule
-family\_key & response & background\_count & shared\_temperatures\_c & minimum\_delta\_pct\_point & maximum\_delta\_pct\_point & background\_mean\_deltas\_pct\_point & comparison\_interpretation \\
+family\_\allowbreakkey & response & background\_\allowbreakcount & shared\_\allowbreaktemperatures\_\allowbreakc & minimum\_\allowbreakdelta\_\allowbreakpct\_\allowbreakpoint & maximum\_\allowbreakdelta\_\allowbreakpct\_\allowbreakpoint & background\_\allowbreakmean\_\allowbreakdeltas\_\allowbreakpct\_\allowbreakpoint & comparison\_\allowbreakinterpretation \\
 \midrule
 \endhead
-co\_loading\_wt\_pct:1->5 & S\_C4 & 2 & 250/275/300/350 & -39.76 & -3.21 & A1->A6: -34.35; A9->A10: -13.23 & same direction; magnitude may vary by background \\
-co\_loading\_wt\_pct:1->5 & X\_EtOH & 2 & 250/275/300/350 & -4.37 & 18.95 & A1->A6: 11.93; A9->A10: -2.78 & opposite directions across backgrounds \\
-ethanol\_feed\_ml\_min:0.3->1.68 & S\_C4 & 2 & 250/275/300/350 & 0.42 & 20.35 & A5->A2: 14.14; A7->A12: 1.99 & same direction; magnitude may vary by background \\
-ethanol\_feed\_ml\_min:0.3->1.68 & X\_EtOH & 2 & 250/275/300/350 & -38.69 & 31.07 & A5->A2: 10.94; A7->A12: -28.89 & opposite directions across backgrounds \\
-ethanol\_feed\_ml\_min:0.9->1.68 & S\_C4 & 3 & 250/275/300/350 & -3.63 & 29.93 & A3->A1: 24.56; A8->A12: -1.52; B7->B2: -2.05 & opposite directions across backgrounds \\
-ethanol\_feed\_ml\_min:0.9->1.68 & X\_EtOH & 3 & 250/275/300/350 & -14.28 & -1.64 & A3->A1: -11.85; A8->A12: -7.05; B7->B2: -6.16 & same direction; magnitude may vary by background \\
-ethanol\_feed\_ml\_min:1.68->2.1 & S\_C4 & 2 & 250/275/300/350/400 & -15.25 & 8.78 & A12->A9: 4.04; B1->B5: -7.09 & opposite directions across backgrounds \\
-ethanol\_feed\_ml\_min:1.68->2.1 & X\_EtOH & 2 & 250/275/300/350/400 & -6.52 & 1.39 & A12->A9: -2.46; B1->B5: -0.37 & temperature-dependent direction within a background \\
-packing\_mode:I->II & S\_C4 & 2 & 250/275/300/350/400 & -16.21 & 4.78 & A9->B5: -9.16; A12->B1: 1.97 & opposite directions across backgrounds \\
-packing\_mode:I->II & X\_EtOH & 2 & 250/275/300/350/400 & -0.94 & 4.18 & A9->B5: 1.73; A12->B1: -0.36 & opposite directions across backgrounds \\
-total\_catalyst\_mg:100->400 & S\_C4 & 2 & 250/275/300/350 & -0.48 & 35.72 & A12->A1: 29.47; A8->A3: 3.39 & temperature-dependent direction within a background \\
-total\_catalyst\_mg:100->400 & X\_EtOH & 2 & 250/275/300/350 & 0.63 & 17.22 & A12->A1: 6.99; A8->A3: 11.79 & same direction; magnitude may vary by background \\
+co\_\allowbreakloading\_\allowbreakwt\_\allowbreakpct:1->5 & S\_\allowbreakC4 & 2 & 250/275/300/350 & -39.76 & -3.21 & A1->A6: -34.35; A9->A10: -13.23 & same direction; magnitude may vary by background \\
+co\_\allowbreakloading\_\allowbreakwt\_\allowbreakpct:1->5 & X\_\allowbreakEtOH & 2 & 250/275/300/350 & -4.37 & 18.95 & A1->A6: 11.93; A9->A10: -2.78 & opposite directions across backgrounds \\
+ethanol\_\allowbreakfeed\_\allowbreakml\_\allowbreakmin:0.3->1.68 & S\_\allowbreakC4 & 2 & 250/275/300/350 & 0.42 & 20.35 & A5->A2: 14.14; A7->A12: 1.99 & same direction; magnitude may vary by background \\
+ethanol\_\allowbreakfeed\_\allowbreakml\_\allowbreakmin:0.3->1.68 & X\_\allowbreakEtOH & 2 & 250/275/300/350 & -38.69 & 31.07 & A5->A2: 10.94; A7->A12: -28.89 & opposite directions across backgrounds \\
+ethanol\_\allowbreakfeed\_\allowbreakml\_\allowbreakmin:0.9->1.68 & S\_\allowbreakC4 & 3 & 250/275/300/350 & -3.63 & 29.93 & A3->A1: 24.56; A8->A12: -1.52; B7->B2: -2.05 & opposite directions across backgrounds \\
+ethanol\_\allowbreakfeed\_\allowbreakml\_\allowbreakmin:0.9->1.68 & X\_\allowbreakEtOH & 3 & 250/275/300/350 & -14.28 & -1.64 & A3->A1: -11.85; A8->A12: -7.05; B7->B2: -6.16 & same direction; magnitude may vary by background \\
+ethanol\_\allowbreakfeed\_\allowbreakml\_\allowbreakmin:1.68->2.1 & S\_\allowbreakC4 & 2 & 250/275/300/350/400 & -15.25 & 8.78 & A12->A9: 4.04; B1->B5: -7.09 & opposite directions across backgrounds \\
+ethanol\_\allowbreakfeed\_\allowbreakml\_\allowbreakmin:1.68->2.1 & X\_\allowbreakEtOH & 2 & 250/275/300/350/400 & -6.52 & 1.39 & A12->A9: -2.46; B1->B5: -0.37 & temperature-dependent direction within a background \\
+packing\_\allowbreakmode:I->II & S\_\allowbreakC4 & 2 & 250/275/300/350/400 & -16.21 & 4.78 & A9->B5: -9.16; A12->B1: 1.97 & opposite directions across backgrounds \\
+packing\_\allowbreakmode:I->II & X\_\allowbreakEtOH & 2 & 250/275/300/350/400 & -0.94 & 4.18 & A9->B5: 1.73; A12->B1: -0.36 & opposite directions across backgrounds \\
+total\_\allowbreakcatalyst\_\allowbreakmg:100->400 & S\_\allowbreakC4 & 2 & 250/275/300/350 & -0.48 & 35.72 & A12->A1: 29.47; A8->A3: 3.39 & temperature-dependent direction within a background \\
+total\_\allowbreakcatalyst\_\allowbreakmg:100->400 & X\_\allowbreakEtOH & 2 & 250/275/300/350 & 0.63 & 17.22 & A12->A1: 6.99; A8->A3: 11.79 & same direction; magnitude may vary by background \\
 \bottomrule
 \end{longtable}
 \endgroup

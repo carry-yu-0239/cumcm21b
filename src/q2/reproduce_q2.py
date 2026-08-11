@@ -441,7 +441,7 @@ def temperature_overall(records: pd.DataFrame) -> pd.DataFrame:
 
 def latex_escape(value: object) -> str:
     text = str(value)
-    for source, replacement in [("\\", r"\textbackslash{}"), ("&", r"\&"), ("%", r"\%"), ("_", r"\_"), ("#", r"\#")]:
+    for source, replacement in [("\\", r"\textbackslash{}"), ("&", r"\&"), ("%", r"\%"), ("_", r"\_\allowbreak"), ("#", r"\#")]:
         text = text.replace(source, replacement)
     return text
 
@@ -454,6 +454,21 @@ TEX_COLUMNS = {
     "q2_local_rectangle_interactions": ["rectangle", "groups_coordinate_order", "temperature_c", "response", "interaction_I_pct_point"],
     "q2_specific_contrast_evidence": ["comparison", "response", "background_count", "shared_temperatures_c", "minimum_effect_pct_point", "maximum_effect_pct_point", "comparison_interpretation"],
     "q2_factor_conclusions": ["factor", "response", "scope_qualified_conclusion", "evidence"],
+}
+
+# Appendix B contains wide machine-generated evidence tables.  All columns use
+# fixed fractions of the available line width so labels and prose wrap rather
+# than extend beyond the page; the appendix places these longtables on
+# landscape pages.
+TEX_COLUMN_WIDTHS = {
+    3: 0.30,
+    4: 0.225,
+    5: 0.18,
+    6: 0.15,
+    7: 0.128,
+    8: 0.112,
+    9: 0.10,
+    10: 0.09,
 }
 
 
@@ -478,8 +493,11 @@ def write_table(frame: pd.DataFrame, stem: str, caption: str, label: str, decima
                 values.append(latex_escape(value))
         body_rows.append(" & ".join(values) + r" \\")
     tex = "\n".join([
-        r"\begingroup\scriptsize",
-        r"\begin{longtable}{" + "l" * len(columns) + "}",
+        r"\begingroup\scriptsize\setlength{\tabcolsep}{1.5pt}\renewcommand{\arraystretch}{1.1}",
+        r"\begin{longtable}{" + " ".join(
+            r">{\raggedright\arraybackslash}p{" + f"{TEX_COLUMN_WIDTHS[len(columns)]:.3f}" + r"\linewidth}"
+            for _ in columns
+        ) + "}",
         rf"\caption{{{caption}}}\label{{{label}}}\\",
         r"\toprule",
         header,
