@@ -1,0 +1,45 @@
+{
+  "status": "PASS",
+  "checks": {
+    "114_records": true,
+    "21_combinations": true,
+    "all_yields_in_0_100": true,
+    "yield_no_greater_than_conversion": true,
+    "a11_rho_undefined": true,
+    "observed_best": true,
+    "strict_observed_best": true,
+    "common_temperatures": true,
+    "common_temperature_winners": true,
+    "a2_boundary_value": true,
+    "a2_slope": true,
+    "quadratic_pressure_vertex": true,
+    "proxy_sample_shape": true,
+    "temperature_only_metrics": true,
+    "main_effects_metrics": true,
+    "two_interactions_metrics": true
+  },
+  "source_hashes": {
+    "data\\raw\\q1_attachment1.xlsx": "de8e67e2c3fafb703553cb20e46f1a6db7109c5039bd50fd450c1e093a7080a3",
+    "docs\\handoffs\\q3_model_handoff.docx": "59e9e7e7f3c60a7839313507cc2c7f441dc30bface10353473bf777d889188eb"
+  },
+  "proxy_metrics": {
+    "temperature_only": {
+      "parameter_count": 3,
+      "loco_rmse_pct_point": 5.952752587914909,
+      "loco_mae_pct_point": 3.5335500475825854,
+      "a3_400_loco_prediction_pct": 17.989500885949962
+    },
+    "main_effects": {
+      "parameter_count": 8,
+      "loco_rmse_pct_point": 5.245413657038213,
+      "loco_mae_pct_point": 3.741333142290038,
+      "a3_400_loco_prediction_pct": 24.2477432738981
+    },
+    "two_interactions": {
+      "parameter_count": 10,
+      "loco_rmse_pct_point": 5.3885773171865265,
+      "loco_mae_pct_point": 3.7351380735300923,
+      "a3_400_loco_prediction_pct": 26.79715692744607
+    }
+  }
+}

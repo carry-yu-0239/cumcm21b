@@ -1,0 +1,15 @@
+\begin{longtable}{L{0.28\textwidth}C{0.11\textwidth}C{0.16\textwidth}C{0.16\textwidth}C{0.19\textwidth}}
+\caption{候选因素级代理的按催化剂组合留出检验}\label{tab:q3-proxy-loco}\\
+\toprule
+候选模型 & 参数数 & LOCO RMSE & LOCO MAE & A3--400 ℃留组预测 / \% \\
+\midrule
+\endfirsthead
+\toprule
+候选模型 & 参数数 & LOCO RMSE & LOCO MAE & A3--400 ℃留组预测 / \% \\
+\midrule
+\endhead
+仅温度 $u+u^2$ & 3 & 5.9528 & 3.5336 & 17.99 \\
+低阶主效应代理 & 8 & 5.2454 & 3.7413 & 24.25 \\
+主效应加两个温度交互 & 10 & 5.3886 & 3.7351 & 26.80 \\
+\bottomrule
+\end{longtable}

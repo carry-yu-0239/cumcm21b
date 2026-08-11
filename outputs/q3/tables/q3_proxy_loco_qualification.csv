@@ -1,0 +1,4 @@
+﻿model,parameter_count,loco_rmse_pct_point,loco_mae_pct_point,a3_400_loco_prediction_pct
+temperature_only,3,5.952753,3.533550,17.989501
+main_effects,8,5.245414,3.741333,24.247743
+two_interactions,10,5.388577,3.735138,26.797157

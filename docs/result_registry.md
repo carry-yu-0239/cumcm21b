@@ -10,3 +10,6 @@
 | Q2-R02 | 温度端点总体效应 | 250→350 ℃时 \(X_{\mathrm{EtOH}}\)、\(S_{\mathrm{C4}}\) 均为 21/21 正增量；均值为 24.46、15.30 个百分点 | src/q2/reproduce_q2.py | 严格核验通过 | 07_problem2.tex |
 | Q2-R03 | 13 个严格匹配块、6 类跨背景同对比族、2 个局部四格 | outputs/q2/tables/q2_strict_match_blocks.csv、q2_contrast_family_summary.csv、q2_local_rectangle_interactions.csv | src/q2/reproduce_q2.py | 结构单元测试通过 | 07_problem2.tex、附录 B |
 | Q2-R04 | 局部二阶对比与删一温度敏感性 | outputs/q2/tables/q2_leave_one_temperature_sensitivity.csv、outputs/q2/figures/q2_leave_one_temperature_sensitivity.png | src/q2/reproduce_q2.py | 所有删一温度结果保持原平均二阶对比符号 | 07_problem2.tex、附录 B |
+| Q3-R01 | 全部 114 条实测节点的收率排序与严格 $T<350$ ℃排序 | outputs/q3/tables/q3_all_observed_yield_ranking.csv、q3_strict_lt350_yield_ranking.csv | src/q3/reproduce_q3.py | 待本轮严格核验 | 08_problem3.tex、附录 C |
+| Q3-R02 | 全温区与严格低温的收率优化结果 | A3--400 ℃为 44.72%；A2--325 ℃为 17.26%；$T\to350^-$ 的局部上确界为 26.54% | src/q3/reproduce_q3.py | 待本轮严格核验 | 08_problem3.tex |
+| Q3-R03 | 候选因素级代理的按组合留出资格检验及 A3 压力测试 | outputs/q3/tables/q3_proxy_loco_qualification.csv、outputs/q3/figures/ | src/q3/reproduce_q3.py | 待本轮严格核验 | 08_problem3.tex |

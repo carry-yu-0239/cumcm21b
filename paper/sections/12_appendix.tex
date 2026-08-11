@@ -99,3 +99,19 @@
 可重新生成解析数据、CSV 工程表、图形与结构校验日志。程序生成的原始 TeX 表位于
 \path{outputs/q2/tables_raw/}；论文实际引用的中文展示表位于
 \path{outputs/q2/tables/}，两者分离以避免复现程序覆盖论文排版。
+
+\clearpage
+\section{问题三补充结果}
+\label{app:q3-results}
+
+以下给出问题三的完整实测收率排序与严格低温排序；正文仅引用其中前 5 个条件。全部表格由同一计算程序从附件1生成，未实测温度不作补值。
+
+\input{\QThreeResultsDir/q3_all_observed_yield_ranking}
+\input{\QThreeResultsDir/q3_strict_lt350_yield_ranking}
+
+\subsection{问题三复现说明}
+
+问题三源程序为 \path{src/q3/reproduce_q3.py}，输入为
+\path{data/raw/q1_attachment1.xlsx}。运行
+\nolinkurl{python src/q3/reproduce_q3.py --strict}
+可重新生成收率记录、排序表、共同温度横截面、候选代理留组检验、图形与核验日志。程序不生成未实验配方的排序，也不把 A11 作为普通 $\rho$ 定义的二元催化体系处理。

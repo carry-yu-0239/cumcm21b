@@ -1,16 +1,123 @@
 \section{问题三模型的建立与求解}
 
-\subsection{综合建模思路}
-\todo{说明问题三如何综合前述模型、增加环境/约束/决策变量或形成最终方案。}
+\subsection{目标量、观测域与决策边界}
 
-\subsection{候选方案与模型复杂度控制}
-\todo{比较候选模型/方案的适用条件、样本量要求、参数数量、核心假设、过拟合风险、可解释性和验证方式；复杂模型必须稳定优于基准才采用。}
+问题三在附件1已有实验信息的支持范围内，联合比较催化剂组合与温度，以 $\mathrm{C}_4$ 烯烃收率为目标量。对组合 $i$ 的第 $j$ 条温度记录，按附件的百分数尺度构造
+\begin{equation}
+  Y_{ij}=\frac{X_{ij}S_{ij}}{100}.
+  \label{eq:q3-yield}
+\end{equation}
+每一个 $Y_{ij}$ 对应一个真实的“组合--温度”实验节点。组合编号仅用于定位实验组；优化时比较的是催化剂条件与温度的联合条件。A11 无 HAP 且含石英砂，其 $\rho$ 未定义，但仍保留在全部实测收率的排序中。
 
-\subsection{模型建立与求解}
-\todo{给出目标、约束、搜索/优化/预测方法和可复现参数设置。}
+为避免将未实验温度当作观测结果，定义实际实验节点集合及各组合自身温度区间内的局部连续化支持域分别为
+\begin{equation}
+ \Omega_{\mathrm{obs}}=\{(\mathbf{c}_i,T_{ij})\},
+ \qquad
+ \Omega_{\mathrm{int}}=\bigcup_{i=1}^{G}\left(\{\mathbf{c}_i\}\times[T_{i,\min},T_{i,\max}]\right),
+ \label{eq:q3-domains}
+\end{equation}
+其中 $\mathbf{c}_i$ 表示第 $i$ 个组合的条件向量。$\Omega_{\mathrm{int}}$ 仅是现有组合温度插值的支持范围，并不表示完整的物理可行域。未记录的温度仍视为未实验，不补零也不插入伪实测值；数值 0 保留为有效实验结果。
 
-\subsection{结果与方案选择}
-\todo{给出最终方案及关键结果，并说明为什么选它，而不是只说“效果最好”。}
+\subsection{观测基准与局部分段线性规则}
 
-\subsection{稳健性与敏感性分析}
-\todo{检查关键参数、边界条件或数据扰动下结论是否稳定，避免极端数学最优解。}
+首先在观测域上直接求解
+\begin{equation}
+ (\mathbf{c}_{\mathrm{obs,opt}},T_{\mathrm{obs,opt}})
+ =\arg\max_{(\mathbf{c}_{i},T_{ij})\in\Omega_{\mathrm{obs}}}Y_{ij}.
+ \label{eq:q3-observed-optimum}
+\end{equation}
+相邻实测温度 $T_{ij}\leq T\leq T_{i,j+1}$ 之间，仅采用低自由度分段线性规则
+\begin{equation}
+ \widehat{Y}_{i}(T)=Y_{ij}+
+ \frac{Y_{i,j+1}-Y_{ij}}{T_{i,j+1}-T_{ij}}(T-T_{ij}).
+ \label{eq:q3-piecewise-linear}
+\end{equation}
+由于每一段均为线性函数，区间最大值必位于端点，即
+\begin{equation}
+ \max_{T\in[T_{ij},T_{i,j+1}]}\widehat{Y}_{i}(T)
+ =\max\{Y_{ij},Y_{i,j+1}\},
+ \qquad
+ \max_{\Omega_{\mathrm{int}}}\widehat{Y}=\max_{\Omega_{\mathrm{obs}}}Y.
+ \label{eq:q3-no-artificial-peak}
+\end{equation}
+该规则用于保持局部连续性，并避免在稀疏实测点之间形成未经数据支持的内部峰值；它不承担识别未实验催化剂条件或区间外温度的任务。
+
+\subsection{全温区收率优化结果}
+
+表~\ref{tab:q3-observed-top5} 给出全部 114 条实测记录中收率最高的 5 个联合条件。由式~\eqref{eq:q3-observed-optimum} 得到最高节点为 A3--\SI{400}{\degreeCelsius}，其 $\mathrm{C}_4$ 烯烃收率为 44.72\%。该条件的原始响应为 $X_{\mathrm{EtOH}}=83.70\%$、$S_{\mathrm{C4}}=53.43\%$，代入式~\eqref{eq:q3-yield} 得 $Y_{\mathrm{C4}}=44.720910\%$。
+
+\input{\QThreeResultsDir/q3_observed_top5}
+
+图~\ref{fig:q3-all-yield-temperature} 保留各组合各自的真实实测温度轨迹，不跨缺失温度连接。A3 的 \SI{400}{\degreeCelsius} 节点高于其 \SI{450}{\degreeCelsius} 节点，也高于全部其他实测节点；结合式~\eqref{eq:q3-no-artificial-peak}，在当前实验支持范围内推荐 A3--\SI{400}{\degreeCelsius}。其催化剂条件为 \SI{200}{\milli\gram} 1 wt\% $\mathrm{Co/SiO_2}$、\SI{200}{\milli\gram} HAP、$q_{\mathrm{EtOH}}=\SI{0.9}{\milli\liter\per\minute}$、装料方式 I。
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.92\textwidth]{\OutputsDir/q3/figures/q3_all_yield_temperature.png}
+  \caption{21 个催化剂组合的实测 $\mathrm{C}_4$ 烯烃收率--温度轨迹；A2、A3 以颜色突出}
+  \label{fig:q3-all-yield-temperature}
+\end{figure}
+
+催化剂优选依赖温度。21 个组合共同拥有的实测温度为 \SIlist{250;275;300;350}{\degreeCelsius}；相同温度横截面的比较结果见表~\ref{tab:q3-common-temperature}。在 \SI{250}{\degreeCelsius} 时 A7 收率最高，而在 \SIlist{275;300;350}{\degreeCelsius} 时 A2 最高，因此不能把某一组合表述为所有温区内均最优。
+
+\input{\QThreeResultsDir/q3_common_temperature_best}
+
+\subsection{严格低于 \SI{350}{\degreeCelsius} 的情形}
+
+题设“温度低于 \SI{350}{\degreeCelsius}”按严格开区间 $T<\SI{350}{\degreeCelsius}$ 处理。首先只对严格可行的实测节点排序，表~\ref{tab:q3-strict-top5} 显示 A2--\SI{325}{\degreeCelsius} 的收率最高，为 17.26\%。
+
+\input{\QThreeResultsDir/q3_strict_lt350_top5}
+
+为区分实测最优与连续温度下的边界行为，取 A2 在 \SI{325}{\degreeCelsius} 和 \SI{350}{\degreeCelsius} 的相邻观测值，建立局部线性函数
+\begin{equation}
+ \widehat{Y}_{\mathrm{A2}}(T)=17.263556+0.37110096(T-325),
+ \qquad 325\leq T\leq350.
+ \label{eq:q3-a2-local-linear}
+\end{equation}
+A2 在 \SI{350}{\degreeCelsius} 的实测收率为 26.541080\%，且该温度是 21 个组合的共同实测温度并在其中最高。故在严格开区间内，式~\eqref{eq:q3-a2-local-linear} 的上确界为
+\begin{equation}
+ \widehat{Y}_{\mathrm{A2}}(T)\longrightarrow26.541080\%,
+ \qquad T\longrightarrow350^{-}.
+ \label{eq:q3-strict-supremum}
+\end{equation}
+这 26.54\% 是局部模型的上确界，并非严格低于 \SI{350}{\degreeCelsius} 时能够直接取得的最大值。实际设置应选择 A2，并在设备稳定可实现的条件下取严格低于 \SI{350}{\degreeCelsius} 且尽可能接近该边界的温度。
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.88\textwidth]{\OutputsDir/q3/figures/q3_a2_strict_low_temperature.png}
+  \caption{A2 在严格低温约束下的局部线性连续化；虚线表示不可取的 \SI{350}{\degreeCelsius} 边界}
+  \label{fig:q3-a2-low-temperature}
+\end{figure}
+
+\subsection{候选因素级代理的资格检验与峰值敏感性}
+
+为判断能否为未实验配方排序，对普通含 HAP 的组合在 $T\leq\SI{400}{\degreeCelsius}$ 的 108 条记录建立候选因素级代理。令 $u=(T-325)/100$，主效应候选式为
+\begin{equation}
+ \widehat{Y}=\beta_0+\beta_1u+\beta_2u^2+\beta_3\omega_{\mathrm{Co}}
+ +\beta_4m_{\mathrm{cat}}+\beta_5\rho+\beta_6q_{\mathrm{EtOH}}+\beta_7z.
+ \label{eq:q3-proxy}
+\end{equation}
+另以仅含 $u,u^2$ 的模型为基准，并将 $u\omega_{\mathrm{Co}}$、$uq_{\mathrm{EtOH}}$ 作为交互压力测试。每次检验均整组留出一个催化剂组合，而不随机拆分同组温度记录；结果见表~\ref{tab:q3-proxy-loco}。
+
+\input{\QThreeResultsDir/q3_proxy_loco_qualification}
+
+A3--\SI{400}{\degreeCelsius} 的真实收率为 44.72\%，而候选代理在留出 A3 组时的预测仅为 17.99\%、24.25\% 和 26.80\%。其高收益区域的误差已大于 A3 与 A4 在 \SI{400}{\degreeCelsius} 的实测收率差，因此上述代理不用于产生未实验配方的最优排序。
+
+再对 A3 在 \SIlist{350;400;450}{\degreeCelsius} 的三个实测点作二次压力测试：
+\begin{equation}
+ Y_{\mathrm{quad}}(T)=-0.005661714(T-400)^2+0.2509395(T-400)+44.720910.
+ \label{eq:q3-a3-quadratic}
+\end{equation}
+该式顶点约为 $T=\SI{422.16}{\degreeCelsius}$、$Y_{\mathrm{C4}}=47.50\%$，见图~\ref{fig:q3-a3-sensitivity}。然而该二次式恰由 3 个点确定，残差自由度为 0；连续峰值位置随模型形式而变，故不以该顶点替代 A3--\SI{400}{\degreeCelsius} 的实测推荐。
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.88\textwidth]{\OutputsDir/q3/figures/q3_a3_high_temperature_sensitivity.png}
+  \caption{A3 高温区的局部模型形式敏感性；虚线二次曲线仅用于压力测试}
+  \label{fig:q3-a3-sensitivity}
+\end{figure}
+
+\subsection{问题三结论}
+
+表~\ref{tab:q3-conclusion-summary} 汇总两种温度约束下的结果。无温度限制时，A3--\SI{400}{\degreeCelsius} 是现有实测记录中收率最高的催化剂--温度联合条件，并在各组合自身实验温区的局部连续化支持范围内保持最高；严格 $T<\SI{350}{\degreeCelsius}$ 时，实测最优为 A2--\SI{325}{\degreeCelsius}、17.26\%，连续局部模型在 $T\to350^-$ 的上确界为 26.54\%。当前数据未对未实验连续设计空间作可靠的极值排序，故结论限定在上述实验支持范围及局部模型范围内。
+
+\input{\QThreeResultsDir/q3_conclusion_summary}
