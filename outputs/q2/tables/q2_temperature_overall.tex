@@ -1,12 +1,16 @@
-\begingroup\scriptsize
-\begin{longtable}{lllll}
-\caption{250 to 350 degree C endpoint changes across all 21 combinations}\label{tab:q2-temperature-overall}\\
-\toprule
-group & response & positive\_delta\_count & mean\_delta\_250\_to\_350\_pct\_point & median\_delta\_250\_to\_350\_pct\_point \\
-\midrule
-\endhead
-ALL\_21\_SUMMARY & X\_EtOH\_pct & 21 & 24.46 & 21.54 \\
-ALL\_21\_SUMMARY & S\_C4\_pct & 21 & 15.30 & 16.79 \\
-\bottomrule
-\end{longtable}
-\endgroup
+\begin{table}[H]
+  \centering
+  \caption{21 个催化剂组合在 250--350 ℃区间的端点净变化}
+  \label{tab:q2-temperature-overall}
+  \small
+  \begin{tabular}{cccc}
+    \toprule
+    响应 & 正增量组合数 & 平均端点差/百分点 & 中位端点差/百分点 \\
+    \midrule
+    $X_{\mathrm{EtOH}}$ & 21/21 & 24.46 & 21.54 \\
+    $S_{\mathrm{C4}}$ & 21/21 & 15.30 & 16.79 \\
+    \bottomrule
+  \end{tabular}
+  \par\vspace{0.25em}
+  \footnotesize 注：端点差定义为 $R(350)-R(250)$；正增量不表示中间每个温度区间均严格单调。
+\end{table}

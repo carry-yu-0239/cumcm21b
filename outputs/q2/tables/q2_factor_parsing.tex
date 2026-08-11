@@ -1,31 +1,17 @@
-\begingroup\scriptsize
-\begin{longtable}{llllllllll}
-\caption{Experiment-factor parsing for the 21 catalyst combinations}\label{tab:q2-factor-parsing}\\
+\begin{table}[H]
+\centering
+\caption{21 组催化剂组合因素解析结果（A11 单独标记）}
+\label{tab:q2-factor-parsing}
+\small
+\begin{tabularx}{\textwidth}{c C{1.3cm} C{1.3cm} C{1.3cm} C{1.2cm} c}
 \toprule
-group & co\_loading\_wt\_pct & co\_sio2\_mass\_mg & hap\_mass\_mg & quartz\_sand\_mass\_mg & total\_catalyst\_mg & ratio\_key & ethanol\_feed\_ml\_min & packing\_mode\_label & is\_a11\_special \\
+组合 & Co负载量/wt\% & $m_c$/mg & $m_h$/mg & $m_{\rm cat}$/mg & 装料方式 \\
 \midrule
-\endhead
-A1 & 1.00 & 200.00 & 200.00 & 0.00 & 400.00 & 1:1 & 1.68 & I & No \\
-A2 & 2.00 & 200.00 & 200.00 & 0.00 & 400.00 & 1:1 & 1.68 & I & No \\
-A3 & 1.00 & 200.00 & 200.00 & 0.00 & 400.00 & 1:1 & 0.90 & I & No \\
-A4 & 0.50 & 200.00 & 200.00 & 0.00 & 400.00 & 1:1 & 1.68 & I & No \\
-A5 & 2.00 & 200.00 & 200.00 & 0.00 & 400.00 & 1:1 & 0.30 & I & No \\
-A6 & 5.00 & 200.00 & 200.00 & 0.00 & 400.00 & 1:1 & 1.68 & I & No \\
-A7 & 1.00 & 50.00 & 50.00 & 0.00 & 100.00 & 1:1 & 0.30 & I & No \\
-A8 & 1.00 & 50.00 & 50.00 & 0.00 & 100.00 & 1:1 & 0.90 & I & No \\
-A9 & 1.00 & 50.00 & 50.00 & 0.00 & 100.00 & 1:1 & 2.10 & I & No \\
-A10 & 5.00 & 50.00 & 50.00 & 0.00 & 100.00 & 1:1 & 2.10 & I & No \\
-A11 & 1.00 & 50.00 & 0.00 & 90.00 & 50.00 & -- & 1.68 & I & Yes \\
-A12 & 1.00 & 50.00 & 50.00 & 0.00 & 100.00 & 1:1 & 1.68 & I & No \\
-A13 & 1.00 & 67.00 & 33.00 & 0.00 & 100.00 & 67:33 & 1.68 & I & No \\
-A14 & 1.00 & 33.00 & 67.00 & 0.00 & 100.00 & 33:67 & 1.68 & I & No \\
-B1 & 1.00 & 50.00 & 50.00 & 0.00 & 100.00 & 1:1 & 1.68 & II & No \\
-B2 & 1.00 & 100.00 & 100.00 & 0.00 & 200.00 & 1:1 & 1.68 & II & No \\
-B3 & 1.00 & 10.00 & 10.00 & 0.00 & 20.00 & 1:1 & 1.68 & II & No \\
-B4 & 1.00 & 25.00 & 25.00 & 0.00 & 50.00 & 1:1 & 1.68 & II & No \\
-B5 & 1.00 & 50.00 & 50.00 & 0.00 & 100.00 & 1:1 & 2.10 & II & No \\
-B6 & 1.00 & 75.00 & 75.00 & 0.00 & 150.00 & 1:1 & 1.68 & II & No \\
-B7 & 1.00 & 100.00 & 100.00 & 0.00 & 200.00 & 1:1 & 0.90 & II & No \\
+A1--A14 & 已解析 & 已解析 & 已解析 & 已解析 & I \\
+B1--B7 & 已解析 & 已解析 & 已解析 & 已解析 & II \\
+A11 & 1 & 50 & 0 & 50 & I（石英砂）\\
 \bottomrule
-\end{longtable}
-\endgroup
+\end{tabularx}
+\par\vspace{0.2em}
+\footnotesize 注：完整逐组解析数据由工程输出保存；A11 不定义 $\rho$，不进入普通 Co/SiO$_2$--HAP 匹配池。
+\end{table}

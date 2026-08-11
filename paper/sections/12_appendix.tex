@@ -27,7 +27,7 @@
 \begin{figure}[H]
   \centering
   \includegraphics[width=\textwidth]{figures/q1_handoff/appendix_c_selectivity_fits.png}
-  \caption{附件1中 21 种催化剂的 C4 烯烃选择性--温度一次/二次拟合对照（实测点为证据主体）}
+  \caption{附件1中 21 种催化剂的 $\mathrm{C}_4$ 烯烃选择性--温度一次/二次拟合对照（实测点为证据主体）}
   \label{fig:q1-selectivity-fits}
 \end{figure}
 
@@ -49,6 +49,10 @@
 \section{问题二补充结果}
 \label{app:q2-results}
 
+本节表格按交接单规定的两位小数口径展示。工程计算仍保留底层原始精度；未实测温度不补值、不插值，A11 的 $\rho$ 保持未定义。
+
+\input{\QTwoResultsDir/q2_temperature_overall}
+\input{\QTwoResultsDir/q2_temperature_trajectories}
 \input{\QTwoResultsDir/q2_factor_parsing}
 \input{\QTwoResultsDir/q2_strict_match_blocks}
 \input{\QTwoResultsDir/q2_multilevel_matching_responses}
@@ -59,10 +63,13 @@
 \input{\QTwoResultsDir/q2_specific_contrast_evidence}
 \input{\QTwoResultsDir/q2_factor_conclusions}
 
+\clearpage
+\subsection{问题二补充图形}
+
 \begin{figure}[H]
   \centering
   \includegraphics[width=\textwidth]{\OutputsDir/q2/figures/q2_multilevel_blocks_S_C4.png}
-  \caption{四个主要多水平严格匹配块的 C4 烯烃选择性温度响应}
+  \caption{四个主要多水平严格匹配块的 $\mathrm{C}_4$ 烯烃选择性温度响应}
 \end{figure}
 
 \begin{figure}[H]
@@ -83,3 +90,12 @@
   \caption{两个局部矩形的删一温度敏感性结果}
   \label{fig:q2-sensitivity}
 \end{figure}
+
+\subsection{问题二复现说明}
+
+问题二源程序为 \path{src/q2/reproduce_q2.py}，输入为
+\path{data/raw/q1_attachment1.xlsx}。运行
+\nolinkurl{python src/q2/reproduce_q2.py --strict}
+可重新生成解析数据、CSV 工程表、图形与结构校验日志。程序生成的原始 TeX 表位于
+\path{outputs/q2/tables_raw/}；论文实际引用的中文展示表位于
+\path{outputs/q2/tables/}，两者分离以避免复现程序覆盖论文排版。
